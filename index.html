@@ -886,20 +886,21 @@ a[data-type=external] {
 
 .home__lab-tease {
     position: relative;
-    width: 100vw;
-    margin: 0;
     padding: 0 0;
+    margin-left: -50vw;          
+    margin-right: -50vw;
+    box-sizing: border-box; 
 }
 
 .page__body {
-    padding: 100px 20px
+    /* padding: 100px 20px */
 }
 
 @media(min-width: 768px) {
     .page__body {
         padding-bottom:120px;
-        padding-left: 30px;
-        padding-right: 30px;
+        /* padding-left: 30px;
+        padding-right: 30px; */
         padding-top: 120px
     }
 }
@@ -2074,7 +2075,7 @@ a[data-type=external] {
 
 .footer__bottom {
     -ms-flex-pack: justify;
-    border-top: 1px solid hsl(0deg 0% 41.42%)
+    border-top: 1px solid var(--c-border);
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -3365,7 +3366,9 @@ a .lazy-img__placeholder.wide {
 
 .content-block.alignfull {
     max-width: none;
-    position: relative
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .content-block.alignfull>* {
@@ -3567,42 +3570,39 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.myVideo:hover {
-  cursor: url(https://raw.githubusercontent.com/oliviamborges/testtest.com/0d019b93df24e2aaf2e59c915a29bbfc80d62964/pause.svg), auto;
-}
 .form__input, .form__input__btn {
-            background-color: black; /* Black background */
-            color: white; /* White text */
-            border: 2px solid white; /* White stroke */
-            padding: 10px; /* Padding for better visual spacing */
-            margin: 5px 0; /* Margin for spacing between fields */
-            width: 90%; /* Adjust width as necessary */
+            background-color: black; 
+            color: white; 
+            border: 2px solid white;
+            padding: 10px; 
+            margin: 5px 0; 
+            width: 90%;
         }
 
         .form__input__btn {
-            cursor: pointer; /* Cursor changes to pointer when hovering over the button */
+            cursor: pointer; 
         }
 
         .col-12 {
             display: flex;
-            justify-content: center; /* Center align the input fields */
+            justify-content: center;
             padding: 5px;
         }
 
         /* Responsive adjustments */
-        @media (min-width: 992px) { /* Adjusts for large screens */
+        @media (min-width: 992px) { 
             .col-lg-4 {
                 flex: 0 0 auto;
-                width: 33.333333%; /* Width divided among three inputs */
+                width: 33.333333%;
             }
         }
 .rq-container {
     display: flex;
-    justify-content: space-evenly; /* Distribute space evenly */
-    flex-wrap: wrap; /* Wrap items when not enough space */
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
     margin: 0;
-    padding: 190px; /* Space on the outside */
-    gap: 50px; /* Space between items */
+    padding: 190px;
+    gap: 50px;
     width: 100%;
     max-width: 100%;
   }
@@ -3611,24 +3611,24 @@ a .lazy-img__placeholder.wide {
     border: 1px solid #c1f5a8; 
     padding: 55px;
     flex-grow: 1;
-    flex-basis: calc(33.333% - 60px); /* Three columns, accounting for the gap */
+    flex-basis: calc(33.333% - 60px);
     text-align: left;
     font-family: "IBM Plex Sans Condensed", sans-serif;
     font-size: calc(3.75px + 1.2625vw);
     font-weight: 700;
-    min-height: 100px; /* Minimum height for better visual */
+    min-height: 100px;
   }
 @media (max-width: 768px) {
     .rq-rectangle {
       padding: 43px;
       font-size: calc(10.75px + 1.2625vw);
-      flex-basis: calc(50% - 20px); /* Two columns on smaller screens */
+      flex-basis: calc(50% - 20px); 
     }
     .rq-container {
-    padding-top: 190px; /* Space on the outside */
-    padding-bottom: 190px; /* Space on the outside */
-    padding-left: 70px; /* Space on the outside */
-    padding-right: 70px; /* Space on the outside */
+    padding-top: 190px; 
+    padding-bottom: 190px; 
+    padding-left: 70px;
+    padding-right: 70px; 
     }
   }
 
@@ -3636,38 +3636,41 @@ a .lazy-img__placeholder.wide {
     .rq-rectangle {
       padding: 43px;
       font-size: calc(10.75px + 1.2625vw);
-      flex-basis: 100%; /* Single column on very small screens */
+      flex-basis: 100%;
     }
     .rq-container {
-    padding-top: 190px; /* Space on the outside */
-    padding-bottom: 190px; /* Space on the outside */
-    padding-left: 70px; /* Space on the outside */
-    padding-right: 70px; /* Space on the outside */
+    padding-top: 190px;
+    padding-bottom: 190px;
+    padding-left: 70px;
+    padding-right: 70px;
     }
   }
 
 .footer-image-container {
-        flex: 1; /* Gives the image container 1 part of the space */
+        flex: 1; 
         display: flex;
-        justify-content: center; /* Centers the image horizontally */
+        justify-content: center; 
     }
 .footer-image-container img {
-        max-width: 100px; /* Limits image width to 100px */
-        height: auto; /* Maintains aspect ratio */
+        max-width: 100px;
+        height: auto;
+	width:50%;
     }
 .footer-center-text {
-        flex: 2; /* Gives the center text 2 parts of the space */
-        text-align: center; /* Centers the text */
+        flex: 2; 
+        text-align: center; 
 	color:white;
 	font-family: "IBM Plex Sans", sans-serif;
-	padding: 13px; /* Adds padding */
+	padding: 24px;
+	font-size:16px;
     }
 .footer-right-text {
-        flex: 1; /* Gives the right text 1 part of the space */
-        text-align: right; /* Aligns text to the right */
-        padding: 13px; /* Adds padding */
+        flex: 1;
+        text-align: right; 
 	color:white;
 	font-family: "IBM Plex Sans", sans-serif;
+	padding: 24px;
+	font-size:16px;
     }
 </style>
 </head>
@@ -4160,7 +4163,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
         
             <div class="footer__bottom">
-                    <div class="image-container">
+                    <div class="footer-image-container">
 
                                     <img src="vu_white.svg" height="90">
                                 </div>
