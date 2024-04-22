@@ -20814,8 +20814,34 @@ a .lazy-img__placeholder.wide {
 }
 	
 .lazy-video:hover {
-  cursor: url("pause.svg"), auto;
+  cursor: url(https://raw.githubusercontent.com/oliviamborges/testtest.com/54ca444a224a64ab61546919d2e4a7ceaea534ed/pause.svg), auto;
 }
+.form__input, .form__input__btn {
+            background-color: black; /* Black background */
+            color: white; /* White text */
+            border: 2px solid white; /* White stroke */
+            padding: 10px; /* Padding for better visual spacing */
+            margin: 5px 0; /* Margin for spacing between fields */
+            width: 90%; /* Adjust width as necessary */
+        }
+
+        .form__input__btn {
+            cursor: pointer; /* Cursor changes to pointer when hovering over the button */
+        }
+
+        .col-12 {
+            display: flex;
+            justify-content: center; /* Center align the input fields */
+            padding: 5px;
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 992px) { /* Adjusts for large screens */
+            .col-lg-4 {
+                flex: 0 0 auto;
+                width: 33.333333%; /* Width divided among three inputs */
+            }
+        }
 </style>
 </head>
 <body>
@@ -21271,15 +21297,17 @@ document.addEventListener('DOMContentLoaded', function() {
                             <div class="footer__col">
                         <p class="footer__headline">Integrating social psychology, personality psychology, behavioral genetics, and evolutionary biology, our interdisciplinary approach provides a comprehensive understanding of the human mind.</p>
                                             <span class="footer__cta-link">
-                                
-        <a class="cta-link" href="https://innovationlabs.harvard.edu/press-13" data-loaded-3="">
-            <span class="cta-link__dot default"></span>
-            <span class="cta-link__text">Subscribe to Innovation News
-                <svg class="cta-link__arrow-svg" aria-hidden="true">
-                    <use href="#cta-arrow"></use>
-                </svg>
-            </span>
-        </a>
+                                    <form class="row form" action="https://gmail.us22.list-manage.com/subscribe/post?u=55a7d529492a7a8b4219d2799&amp;id=ed869edf0b&amp;f_id=00d7cae1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+        <div class="col-12 col-lg-4">
+            <input class="form__input" type="text" value="" name="FNAME" id="mce-FNAME" placeholder="Name">
+        </div>
+        <div class="col-12 col-lg-4">
+            <input class="form__input" type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="E-mail">
+        </div>
+        <div class="col-12 col-lg-4">
+            <input class="form__input__btn" type="submit" name="subscribe" id="mc-embedded-subscribe" value="Subscribe">
+        </div>
+    </form>
                             </span>
                                     </div>
                 
