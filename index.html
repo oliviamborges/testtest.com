@@ -5365,6 +5365,12 @@ a[data-type=external] {
     position: relative;
     width: 100%
 }
+.footer__lab-card img {
+    transition: transform 0.3s ease;  /* Smooth transition for 0.3 seconds */
+}
+.footer__lab-card:hover img {
+    transform: rotate(30deg);  /* Rotate image by 30 degrees on hover */
+}
 
 @media(min-width: 600px) {
     .footer__lab-card {
