@@ -20854,6 +20854,16 @@ a .lazy-img__placeholder.wide {
                 width: 33.333333%; /* Width divided among three inputs */
             }
         }
+.footer-center-text {
+        text-align: center; /* Centers the text block */
+        margin-top: 20%; /* Adjusts the distance from the top */
+    }
+.footer-right-text {
+        position: absolute; /* Positions the right text block absolutely */
+        top: 0; /* Aligns it to the top */
+        right: 0; /* Aligns it to the right */
+        padding: 20px; /* Adds some padding around the text */
+    }
 </style>
 </head>
 <body>
@@ -21360,22 +21370,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p class="footer__notes">
                                     <img src="vu_white.svg" height="90">
                             </p>
-                            <nav aria-label="Utility">
-                        <ul class="footer__bottom-links">
-                                                    <li>
-                                    <a class="footer__link--bottom" href="https://innovationlabs.harvard.edu/terms-of-use" data-loaded-3="">Terms of Use</a>
-                                </li>
-                                                    <li>
-                                    <a class="footer__link--bottom" href="https://accessibility.harvard.edu/" rel="noopener noreferrer" target="_blank" data-type="external" data-loaded-3="">Accessibility</a>
-                                </li>
-                                                    <li>
-                                    <a class="footer__link--bottom" href="https://accessibility.huit.harvard.edu/digital-accessibility-policy" rel="noopener noreferrer" target="_blank" data-type="external" data-loaded-3="">Digital Accessibility</a>
-                                </li>
-                                                    <li>
-                                    <a class="footer__link--bottom" href="https://innovationlabs.harvard.edu/privacy-policy" data-loaded-3="">Privacy Policy</a>
-                                </li>
-                                            </ul>
-                    </nav>
+		       <div class="footer-center-text">
+        <p><strong>Tybur Behavioral Immune Research</strong></p> <!-- Bold text -->
+        <p>Van der Boechorststraat 7</p>
+        <p>1081 BT Amsterdam</p>
+    </div>
+    <div class="footer-right-text">
+        <p><strong>Connect</strong></p> <!-- Bold text -->
+        <p>tbir_lab@gmail.com</p>
+        <p>j.m.tybur@vu.nl</p>
+    </div>
+                         
                     </div>
         </footer>
                                     
