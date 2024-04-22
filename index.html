@@ -20830,17 +20830,33 @@ a .lazy-img__placeholder.wide {
         }
 .rq-container {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+    justify-content: space-between; /* Distribute space evenly */
+    flex-wrap: wrap; /* Wrap items when not enough space */
+    margin: 0 auto;
+    padding: 10px; /* Space on the outside */
+    gap: 10px; /* Space between items */
   }
 
   .rq-rectangle {
-    border: 2px solid #c1f5a8; 
+    border: 1px solid #c1f5a8; 
     padding: 20px;
-    width: 100%; 
-    text-align: center;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    flex-grow: 1;
+    flex-basis: calc(33.333% - 20px); /* Three columns, accounting for the gap */
+    text-align: left;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 700;
+    min-height: 100px; /* Minimum height for better visual */
+  }
+@media (max-width: 768px) {
+    .rq-rectangle {
+      flex-basis: calc(50% - 20px); /* Two columns on smaller screens */
+    }
+  }
+
+@media (max-width: 480px) {
+    .rq-rectangle {
+      flex-basis: 100%; /* Single column on very small screens */
+    }
   }
 
 .footer-image-container {
@@ -20856,12 +20872,15 @@ a .lazy-img__placeholder.wide {
         flex: 2; /* Gives the center text 2 parts of the space */
         text-align: center; /* Centers the text */
 	color:white;
+	font-family: "IBM Plex Sans", sans-serif;
+	padding: 20px; /* Adds padding */
     }
 .footer-right-text {
         flex: 1; /* Gives the right text 1 part of the space */
         text-align: right; /* Aligns text to the right */
         padding: 20px; /* Adds padding */
-	color:white
+	color:white;
+	font-family: "IBM Plex Sans", sans-serif;
     }
 </style>
 </head>
