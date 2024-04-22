@@ -11096,7 +11096,7 @@ a .lazy-img__placeholder.wide {
 
 @media(min-width: 2000px) {
     .landing-topper__subhead {
-        font-size:30px
+        font-size:27px
     }
 }
 
@@ -20996,20 +20996,38 @@ a .lazy-img__placeholder.wide {
                             <span class="header__menu-lines"></span>
                         </span>
                     </button>
-        <div class="responsive-menu">
-        <ul id="menu">
-          <li>Our Lab</li>
-          <li>Research</li>
-          <li>Publications</li>
-          <li>People</li>
-        </ul>
-      </div>
-			    <script>
-        // Your JavaScript code
-        $('.header__menu js--dialog__trigger').on('click', function() {
-            $('body').toggleClass('responsive-menu-open');
-        });
-    </script>
+        
+                                                    
+                                                                                                    <div class="dropdown js--flyout__content">
+          <div class="dropdown__links">
+            <ul class="dropdown__list">
+                                                        
+                        <li class="dropdown__item">
+                  <a class="dropdown__link js--flyout__target" href="/Research" data-loaded-3="">
+                    NONPHARM project
+                  </a>
+                </li>
+                                                                
+                        <li class="dropdown__item">
+                  <a class="dropdown__link js--flyout__target" href="/Research" data-loaded-3="">
+                    Paper 1: NPIS against disease
+                  </a>
+                </li>
+                                                                
+                        <li class="dropdown__item">
+                  <a class="dropdown__link js--flyout__target" href="/Research" data-loaded-3="">
+                    Paper 2: Comfort with interpersonal contact
+                  </a>
+                </li>
+
+		    <li class="dropdown__item">
+                  <a class="dropdown__link js--flyout__target" href="/Research" data-loaded-3="">
+                    Paper 3: Universal disgust elicitors
+                  </a>
+                </li>
+                          </ul>
+          </div>
+        </div>
                 </nav>
             </div>
         </header>
@@ -21025,11 +21043,11 @@ a .lazy-img__placeholder.wide {
                                     <h2 class="landing-topper__subhead">Our research focuses on understanding how the immune system influences behavior, providing insights into its effects on health and social interactions.</h2>
                                                 <span class="landing-topper__cta-link">
                             
-        <a class="button small" href="https://innovationlabs.harvard.edu/get-started-for-students" data-loaded-3="">
+        <a class="button small" id="research_questions" data-loaded-3="">
             <span class="button__text">See Our Current Research Questions
             </span>
             <svg class="button__arrow-svg" aria-hidden="true">
-                <img scr="arrowwhite.svg" height="9.65"></use>
+                <img src="arrowwhite.svg" height="9.65">
             </svg>
         </a>
                         </span>
