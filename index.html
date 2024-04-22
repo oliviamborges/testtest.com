@@ -968,9 +968,6 @@ a[data-type=external] {
     height: 100%;
     width: 100%
 }
-.article-tease-grid__tease:first-child {
-        grid-column: 1;
-    }
 
 @media(min-width: 600px) {
     .article-tease-grid__tease:first-child:nth-last-child(2),.article-tease-grid__tease:last-child:nth-child(2) {
@@ -979,7 +976,7 @@ a[data-type=external] {
 }
 
 @media(min-width: 1070px) {
-    .article-tease-grid__tease:first-child:nth-last-child(3) {
+    .article-tease-grid__tease:first-child:nth-last-child(2) {
         -ms-flex-order:2;
         grid-column: span 2/span 2;
         order: 2
@@ -3561,8 +3558,8 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.video:hover {
-  cursor: url("https://raw.githubusercontent.com/oliviamborges/testtest.com/0d019b93df24e2aaf2e59c915a29bbfc80d62964/pause.svg"), auto;
+.myVideo:hover {
+  cursor: url(https://raw.githubusercontent.com/oliviamborges/testtest.com/0d019b93df24e2aaf2e59c915a29bbfc80d62964/pause.svg), auto;
 }
 .form__input, .form__input__btn {
             background-color: black; /* Black background */
