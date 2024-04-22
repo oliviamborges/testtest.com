@@ -1571,7 +1571,7 @@ a[data-type=external] {
     width: .725em
 }
 
-.rich-text blockquote cite.student-i-lab:before,.rich-text blockquote strong.student-i-lab:before {
+.rich-text blockquote cite.st-lab:before,.rich-text blockquote strong.st-lab:before {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -1583,7 +1583,7 @@ a[data-type=external] {
     background-color: var(--c-bg-light)
 }
 
-.rich-text blockquote cite.launch-lab:before,.rich-text blockquote strong.launch-lab:before {
+.rich-text blockquote cite.lc-lab:before,.rich-text blockquote strong.lc-lab:before {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -1595,7 +1595,7 @@ a[data-type=external] {
     background-color: var(--c-bg-light)
 }
 
-.rich-text blockquote cite.pagliuca-harvard-life-lab:before,.rich-text blockquote strong.pagliuca-harvard-life-lab:before {
+.rich-text blockquote cite.ph-lab:before,.rich-text blockquote strong.ph-lab:before {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -2338,14 +2338,14 @@ a[data-type=external] {
 }
 
 .page__body {
-    padding: 100px 20px
+    /* padding: 100px 20px */
 }
 
 @media(min-width: 768px) {
     .page__body {
         padding-bottom:120px;
-        padding-left: 30px;
-        padding-right: 30px;
+       /* padding-left: 30px;
+        padding-right: 30px; */
         padding-top: 120px
     }
 }
@@ -3222,7 +3222,7 @@ a[data-type=external] {
     width: 2em
 }
 
-.directory__initial.student-i-lab {
+.directory__initial.st-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -3233,7 +3233,7 @@ a[data-type=external] {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.directory__initial.launch-lab {
+.directory__initial.lc-lab {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -3244,7 +3244,7 @@ a[data-type=external] {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.directory__initial.pagliuca-harvard-life-lab {
+.directory__initial.ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -3779,7 +3779,7 @@ a[data-type=external] {
     width: .725em
 }
 
-.announcement__headline.student-i-lab:before {
+.announcement__headline.st-lab:before {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -3791,7 +3791,7 @@ a[data-type=external] {
     background-color: var(--c-bg-light)
 }
 
-.announcement__headline.launch-lab:before {
+.announcement__headline.lc-lab:before {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -3803,7 +3803,7 @@ a[data-type=external] {
     background-color: var(--c-bg-light)
 }
 
-.announcement__headline.pagliuca-harvard-life-lab:before {
+.announcement__headline.ph-lab:before {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -3983,7 +3983,7 @@ a[data-type=external] {
 }
 
 .article-tease-grid__tease {
-    grid-column: span 4/span 4;
+    grid-column: span 2/span 2;
     height: 100%;
     width: 100%
 }
@@ -3995,7 +3995,7 @@ a[data-type=external] {
 }
 
 @media(min-width: 1070px) {
-    .article-tease-grid__tease:first-child:nth-last-child(3) {
+    .article-tease-grid__tease:first-child:nth-last-child(2) {
         -ms-flex-order:2;
         grid-column: span 2/span 2;
         order: 2
@@ -4302,7 +4302,7 @@ a[data-type=external] {
     stroke: currentColor
 }
 
-.article-tease__figure--fallback.student-i-lab {
+.article-tease__figure--fallback.st-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -4313,7 +4313,7 @@ a[data-type=external] {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.article-tease__figure--fallback.launch-lab {
+.article-tease__figure--fallback.lc-lab {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -4324,7 +4324,7 @@ a[data-type=external] {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.article-tease__figure--fallback.pagliuca-harvard-life-lab {
+.article-tease__figure--fallback.ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -5229,7 +5229,7 @@ a[data-type=external] {
     font-feature-settings: "ss01";
     color: var(--c-text);
     font-family: "IBM Plex Sans", sans-serif;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 400;
     letter-spacing: -.05em;
     line-height: 1.2;
@@ -5240,7 +5240,7 @@ a[data-type=external] {
 
 @media(min-width: 400px)and (max-width:1999px) {
     .footer__headline {
-        font-size:calc(25px + .75vw)
+        font-size:calc(20px + .75vw)
     }
 }
 
@@ -5390,7 +5390,7 @@ a[data-type=external] {
     }
 }
 
-.footer__lab-card.student-i-lab {
+.footer__lab-card.st-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -5401,7 +5401,7 @@ a[data-type=external] {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.footer__lab-card.launch-lab {
+.footer__lab-card.lc-lab {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -5412,7 +5412,7 @@ a[data-type=external] {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.footer__lab-card.pagliuca-harvard-life-lab {
+.footer__lab-card.ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -6809,7 +6809,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.tease-topper__caption.student-i-lab:before {
+.tease-topper__caption.st-lab:before {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -6821,7 +6821,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.tease-topper__caption.launch-lab:before {
+.tease-topper__caption.lc-lab:before {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -6833,7 +6833,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.tease-topper__caption.pagliuca-harvard-life-lab:before {
+.tease-topper__caption.ph-lab:before {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -7606,7 +7606,7 @@ a .lazy-img__placeholder.wide {
     width: 100%
 }
 
-.search-result__placeholder.student-i-lab {
+.search-result__placeholder.st-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -7617,7 +7617,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.search-result__placeholder.launch-lab {
+.search-result__placeholder.lc-lab {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -7628,7 +7628,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.search-result__placeholder.pagliuca-harvard-life-lab {
+.search-result__placeholder.ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -8089,7 +8089,7 @@ a .lazy-img__placeholder.wide {
     color: var(--c-text)
 }
 
-.venture-story-tease__link.student-i-lab:focus .venture-story-tease__content,.venture-story-tease__link.student-i-lab:hover .venture-story-tease__content {
+.venture-story-tease__link.st-lab:focus .venture-story-tease__content,.venture-story-tease__link.st-lab:hover .venture-story-tease__content {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -8103,7 +8103,7 @@ a .lazy-img__placeholder.wide {
     color: var(--c-text)
 }
 
-.venture-story-tease__link.launch-lab:focus .venture-story-tease__content,.venture-story-tease__link.launch-lab:hover .venture-story-tease__content {
+.venture-story-tease__link.lc-lab:focus .venture-story-tease__content,.venture-story-tease__link.lc-lab:hover .venture-story-tease__content {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -8117,7 +8117,7 @@ a .lazy-img__placeholder.wide {
     color: var(--c-text)
 }
 
-.venture-story-tease__link.pagliuca-harvard-life-lab:focus .venture-story-tease__content,.venture-story-tease__link.pagliuca-harvard-life-lab:hover .venture-story-tease__content {
+.venture-story-tease__link.ph-lab:focus .venture-story-tease__content,.venture-story-tease__link.ph-lab:hover .venture-story-tease__content {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -8161,7 +8161,7 @@ a .lazy-img__placeholder.wide {
     width: .725em
 }
 
-.venture-story-tease__date.student-i-lab:before {
+.venture-story-tease__date.st-lab:before {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -8173,7 +8173,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.venture-story-tease__date.launch-lab:before {
+.venture-story-tease__date.lc-lab:before {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -8185,7 +8185,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.venture-story-tease__date.pagliuca-harvard-life-lab:before {
+.venture-story-tease__date.ph-lab:before {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -8480,7 +8480,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.venture-topper__lab-dot.student-i-lab {
+.venture-topper__lab-dot.st-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -8491,7 +8491,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.venture-topper__lab-dot.launch-lab {
+.venture-topper__lab-dot.lc-lab {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -8502,7 +8502,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.venture-topper__lab-dot.pagliuca-harvard-life-lab {
+.venture-topper__lab-dot.ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -8688,7 +8688,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.venture-topper__border.student-i-lab {
+.venture-topper__border.st-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -8699,7 +8699,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.venture-topper__border.launch-lab {
+.venture-topper__border.lc-lab {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -8710,7 +8710,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.venture-topper__border.pagliuca-harvard-life-lab {
+.venture-topper__border.ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -8832,7 +8832,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(255,199,200,.69)
 }
 
-.venture-topper__founder-placeholder.student-i-lab {
+.venture-topper__founder-placeholder.st-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -8843,7 +8843,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.venture-topper__founder-placeholder.launch-lab {
+.venture-topper__founder-placeholder.lc-lab {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -8854,7 +8854,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.venture-topper__founder-placeholder.pagliuca-harvard-life-lab {
+.venture-topper__founder-placeholder.ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -9166,7 +9166,7 @@ a .lazy-img__placeholder.wide {
     border: 1px solid rgba(0,0,0,0)
 }
 
-.venture-card:focus.student-i-lab,.venture-card:hover.student-i-lab {
+.venture-card:focus.st-lab,.venture-card:hover.st-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -9177,7 +9177,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.venture-card:focus.launch-lab,.venture-card:hover.launch-lab {
+.venture-card:focus.lc-lab,.venture-card:hover.lc-lab {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -9188,7 +9188,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.venture-card:focus.pagliuca-harvard-life-lab,.venture-card:hover.pagliuca-harvard-life-lab {
+.venture-card:focus.ph-lab,.venture-card:hover.ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -9252,7 +9252,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-text)
 }
 
-.student-i-lab .venture-card__award-winner:before {
+.st-lab .venture-card__award-winner:before {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -9263,7 +9263,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.launch-lab .venture-card__award-winner:before {
+.lc-lab .venture-card__award-winner:before {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -9274,7 +9274,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.pagliuca-harvard-life-lab .venture-card__award-winner:before {
+.ph-lab .venture-card__award-winner:before {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -9614,7 +9614,7 @@ a .lazy-img__placeholder.wide {
     width: .725em
 }
 
-.press-list__tease-source.student-i-lab:before {
+.press-list__tease-source.st-lab:before {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -9626,7 +9626,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.press-list__tease-source.launch-lab:before {
+.press-list__tease-source.lc-lab:before {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -9638,7 +9638,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.press-list__tease-source.pagliuca-harvard-life-lab:before {
+.press-list__tease-source.ph-lab:before {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -9732,7 +9732,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.lab-topper__overline.student-i-lab:before {
+.lab-topper__overline.st-lab:before {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -9743,7 +9743,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.lab-topper__overline.launch-lab:before {
+.lab-topper__overline.lc-lab:before {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -9754,7 +9754,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.lab-topper__overline.pagliuca-harvard-life-lab:before {
+.lab-topper__overline.ph-lab:before {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -10013,7 +10013,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.big-intro__text.student-i-lab:after {
+.big-intro__text.st-lab:after {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -10025,7 +10025,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.big-intro__text.launch-lab:after {
+.big-intro__text.lc-lab:after {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -10037,7 +10037,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.big-intro__text.pagliuca-harvard-life-lab:after {
+.big-intro__text.ph-lab:after {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -10227,7 +10227,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.big-image__caption.student-i-lab:before {
+.big-image__caption.st-lab:before {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -10239,7 +10239,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.big-image__caption.launch-lab:before {
+.big-image__caption.lc-lab:before {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -10251,7 +10251,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.big-image__caption.pagliuca-harvard-life-lab:before {
+.big-image__caption.ph-lab:before {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -10473,7 +10473,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.venture-spotlight__venture-name.pagliuca-harvard-life-lab:before {
+.venture-spotlight__venture-name.ph-lab:before {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -10530,7 +10530,7 @@ a .lazy-img__placeholder.wide {
     width: 100%
 }
 
-.venture-spotlight__placeholder.student-i-lab {
+.venture-spotlight__placeholder.st-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -10541,7 +10541,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.venture-spotlight__placeholder.launch-lab {
+.venture-spotlight__placeholder.lc-lab {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -10552,7 +10552,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.venture-spotlight__placeholder.pagliuca-harvard-life-lab {
+.venture-spotlight__placeholder.ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -10737,7 +10737,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-pop)
 }
 
-.tabbed-nav__link.student-i-lab.tabbed-nav__link--active:before {
+.tabbed-nav__link.st-lab.tabbed-nav__link--active:before {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -10749,7 +10749,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.tabbed-nav__link.launch-lab.tabbed-nav__link--active:before {
+.tabbed-nav__link.lc-lab.tabbed-nav__link--active:before {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -10761,7 +10761,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.tabbed-nav__link.pagliuca-harvard-life-lab.tabbed-nav__link--active:before {
+.tabbed-nav__link.ph-lab.tabbed-nav__link--active:before {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -10777,7 +10777,7 @@ a .lazy-img__placeholder.wide {
     background: linear-gradient(263deg,#84a873 -40.52%,rgba(132,168,115,0) 25.08%),radial-gradient(57.44% 57.44% at 36.48% 96.38%,#fab066 0,hsla(30,94%,69%,0) 100%),radial-gradient(96.54% 96.54% at 2.04% 12.97%,#7480e5 23.25%,rgba(116,128,229,0) 100%),radial-gradient(100.33% 100.33% at 98.74% 54.48%,#84a873 0,rgba(132,168,115,0) 100%),linear-gradient(24deg,#fab066 20.57%,hsla(30,94%,69%,0) 61.65%),linear-gradient(90deg,#7480e5,rgba(116,128,229,0) 45.44%),#ff030b
 }
 
-.tabbed-nav__link:focus.student-i-lab:before,.tabbed-nav__link:hover.student-i-lab:before {
+.tabbed-nav__link:focus.st-lab:before,.tabbed-nav__link:hover.st-lab:before {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -10788,7 +10788,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.tabbed-nav__link:focus.launch-lab:before,.tabbed-nav__link:hover.launch-lab:before {
+.tabbed-nav__link:focus.lc-lab:before,.tabbed-nav__link:hover.lc-lab:before {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -10799,7 +10799,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.tabbed-nav__link:focus.pagliuca-harvard-life-lab:before,.tabbed-nav__link:hover.pagliuca-harvard-life-lab:before {
+.tabbed-nav__link:focus.ph-lab:before,.tabbed-nav__link:hover.ph-lab:before {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -10841,7 +10841,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.tabbed-nav__indicator.tabbed-nav__indicator--active.pagliuca-harvard-life-lab {
+.tabbed-nav__indicator.tabbed-nav__indicator--active.ph-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -10886,7 +10886,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.tabbed-nav__border.student-i-lab {
+.tabbed-nav__border.st-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -10897,7 +10897,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.tabbed-nav__border.launch-lab {
+.tabbed-nav__border.lc-lab {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -10908,7 +10908,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.tabbed-nav__border.pagliuca-harvard-life-lab {
+.tabbed-nav__border.ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -11216,7 +11216,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.cta-link__dot.student-i-lab {
+.cta-link__dot.st-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -11228,7 +11228,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.cta-link__dot.launch-lab {
+.cta-link__dot.lc-lab {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -11240,7 +11240,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.cta-link__dot.pagliuca-harvard-life-lab {
+.cta-link__dot.ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -11336,7 +11336,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.double-image-recirc-block.student-i-lab {
+.double-image-recirc-block.st-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -11347,7 +11347,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.double-image-recirc-block.launch-lab {
+.double-image-recirc-block.lc-lab {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -11358,7 +11358,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.double-image-recirc-block.pagliuca-harvard-life-lab {
+.double-image-recirc-block.ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -11432,7 +11432,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.launch-lab .double-image-recirc-block__overline,.pagliuca-harvard-life-lab .double-image-recirc-block__overline,.student-i-lab .double-image-recirc-block__overline {
+.lc-lab .double-image-recirc-block__overline,.ph-lab .double-image-recirc-block__overline,.st-lab .double-image-recirc-block__overline {
     border-top: 1px solid var(--c-bg-light)
 }
 
@@ -11659,7 +11659,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.single-image-recirc-block.student-i-lab {
+.single-image-recirc-block.st-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -11670,7 +11670,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.single-image-recirc-block.launch-lab {
+.single-image-recirc-block.lc-lab {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -11681,7 +11681,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.single-image-recirc-block.pagliuca-harvard-life-lab {
+.single-image-recirc-block.ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -11758,7 +11758,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.launch-lab .single-image-recirc-block__overline:before,.pagliuca-harvard-life-lab .single-image-recirc-block__overline:before,.student-i-lab .single-image-recirc-block__overline:before {
+.lc-lab .single-image-recirc-block__overline:before,.ph-lab .single-image-recirc-block__overline:before,.st-lab .single-image-recirc-block__overline:before {
     background-color: var(--c-bg-light)
 }
 
@@ -12085,7 +12085,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.gradient-border.student-i-lab {
+.gradient-border.st-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -12096,7 +12096,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.gradient-border.launch-lab {
+.gradient-border.lc-lab {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -12107,7 +12107,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.gradient-border.pagliuca-harvard-life-lab {
+.gradient-border.ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -13085,7 +13085,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.lab-tease__inner[data-theme=launch-lab] {
+.lab-tease__inner[data-theme=lc-lab] {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -13096,7 +13096,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.lab-tease__inner[data-theme=pagliuca-harvard-life-lab] {
+.lab-tease__inner[data-theme=ph-lab] {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -13130,7 +13130,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.lab-tease__item--student-i-lab {
+.lab-tease__item--st-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -13141,7 +13141,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.lab-tease__item--launch-lab {
+.lab-tease__item--lc-lab {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -13152,7 +13152,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.lab-tease__item--pagliuca-harvard-life-lab {
+.lab-tease__item--ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -14813,7 +14813,9 @@ a .lazy-img__placeholder.wide {
 
 .content-block.alignfull {
     max-width: none;
-    position: relative
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .content-block.alignfull>* {
@@ -15130,7 +15132,7 @@ a .lazy-img__placeholder.wide {
     text-decoration-color: var(--c-bg-light)
 }
 
-.block-big-link-text__text-link:focus.pagliuca-harvard-life-lab,.block-big-link-text__text-link:hover.pagliuca-harvard-life-lab {
+.block-big-link-text__text-link:focus.ph-lab,.block-big-link-text__text-link:hover.ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -15143,7 +15145,7 @@ a .lazy-img__placeholder.wide {
     text-decoration-color: var(--c-bg-light)
 }
 
-.block-big-link-text__text-link:focus.launch-lab,.block-big-link-text__text-link:hover.launch-lab {
+.block-big-link-text__text-link:focus.lc-lab,.block-big-link-text__text-link:hover.lc-lab {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -15156,7 +15158,7 @@ a .lazy-img__placeholder.wide {
     text-decoration-color: var(--c-bg-light)
 }
 
-.block-big-link-text__text-link:focus.student-i-lab,.block-big-link-text__text-link:hover.student-i-lab {
+.block-big-link-text__text-link:focus.st-lab,.block-big-link-text__text-link:hover.st-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -15614,7 +15616,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.block-embed__caption.student-i-lab:before {
+.block-embed__caption.st-lab:before {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -15626,7 +15628,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.block-embed__caption.launch-lab:before {
+.block-embed__caption.lc-lab:before {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -15638,7 +15640,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.block-embed__caption.pagliuca-harvard-life-lab:before {
+.block-embed__caption.ph-lab:before {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -15920,7 +15922,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.block-image__figcaption.student-i-lab:before {
+.block-image__figcaption.st-lab:before {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -15932,7 +15934,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.block-image__figcaption.launch-lab:before {
+.block-image__figcaption.lc-lab:before {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -15944,7 +15946,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.block-image__figcaption.pagliuca-harvard-life-lab:before {
+.block-image__figcaption.ph-lab:before {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -16060,7 +16062,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.layered-tease__spotlight.student-i-lab {
+.layered-tease__spotlight.st-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -16071,7 +16073,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.layered-tease__spotlight.launch-lab {
+.layered-tease__spotlight.lc-lab {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -16082,7 +16084,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.layered-tease__spotlight.pagliuca-harvard-life-lab {
+.layered-tease__spotlight.ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -16265,7 +16267,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.layered-tease__overline.student-i-lab:before {
+.layered-tease__overline.st-lab:before {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -16277,7 +16279,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.layered-tease__overline.launch-lab:before {
+.layered-tease__overline.lc-lab:before {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -16289,7 +16291,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.layered-tease__overline.pagliuca-harvard-life-lab:before {
+.layered-tease__overline.ph-lab:before {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -16464,7 +16466,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.block-quote__left-content.student-i-lab {
+.block-quote__left-content.st-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -16475,7 +16477,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(171,180,255,.73)
 }
 
-.block-quote__left-content.launch-lab {
+.block-quote__left-content.lc-lab {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -16486,7 +16488,7 @@ a .lazy-img__placeholder.wide {
     --c-text-light: rgba(255,214,173,.89)
 }
 
-.block-quote__left-content.pagliuca-harvard-life-lab {
+.block-quote__left-content.ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -16647,7 +16649,7 @@ a .lazy-img__placeholder.wide {
     width: .725em
 }
 
-.block-quote__cite-text.student-i-lab:before {
+.block-quote__cite-text.st-lab:before {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -16659,7 +16661,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.block-quote__cite-text.launch-lab:before {
+.block-quote__cite-text.lc-lab:before {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -16671,7 +16673,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.block-quote__cite-text.pagliuca-harvard-life-lab:before {
+.block-quote__cite-text.ph-lab:before {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -16758,7 +16760,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.block-quote-small__card-dot.student-i-lab {
+.block-quote-small__card-dot.st-lab {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -16770,7 +16772,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.block-quote-small__card-dot.launch-lab {
+.block-quote-small__card-dot.lc-lab {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -16782,7 +16784,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.block-quote-small__card-dot.pagliuca-harvard-life-lab {
+.block-quote-small__card-dot.ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -16915,7 +16917,7 @@ a .lazy-img__placeholder.wide {
     width: .725em
 }
 
-.block-quote-small__cite-name.student-i-lab:before {
+.block-quote-small__cite-name.st-lab:before {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -16927,7 +16929,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.block-quote-small__cite-name.launch-lab:before {
+.block-quote-small__cite-name.lc-lab:before {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -16939,7 +16941,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.block-quote-small__cite-name.pagliuca-harvard-life-lab:before {
+.block-quote-small__cite-name.ph-lab:before {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -17460,7 +17462,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.block-table__figcaption.student-i-lab:before {
+.block-table__figcaption.st-lab:before {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -17472,7 +17474,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.block-table__figcaption.launch-lab:before {
+.block-table__figcaption.lc-lab:before {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -17484,7 +17486,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.block-table__figcaption.pagliuca-harvard-life-lab:before {
+.block-table__figcaption.ph-lab:before {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -18086,7 +18088,7 @@ a .lazy-img__placeholder.wide {
     }
 }
 
-.block-image-gallery__caption.student-i-lab:before {
+.block-image-gallery__caption.st-lab:before {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -18098,7 +18100,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.block-image-gallery__caption.launch-lab:before {
+.block-image-gallery__caption.lc-lab:before {
     --c-bg-light: #fab066;
     --c-bg: #834a20;
     --c-text: #ffd6ad;
@@ -18110,7 +18112,7 @@ a .lazy-img__placeholder.wide {
     background-color: var(--c-bg-light)
 }
 
-.block-image-gallery__caption.pagliuca-harvard-life-lab:before {
+.block-image-gallery__caption.ph-lab:before {
     --c-bg-light: #84a873;
     --c-bg: #2d4821;
     --c-text: #c1f4a8;
@@ -20889,7 +20891,7 @@ a .lazy-img__placeholder.wide {
     }
 .footer-image-container img {
         max-width: 100px; /* Limits image width to 100px */
-        height: auto; /* Maintains aspect ratio */
+        height: 60px; /* Maintains aspect ratio */
     }
 .footer-center-text {
         flex: 2; /* Gives the center text 2 parts of the space */
@@ -21114,7 +21116,7 @@ a .lazy-img__placeholder.wide {
         <header class="landing-topper no-overline">
                 <div class="landing-topper__grid ">
                 <div class="landing-topper__left ">
-                    <h1 class="landing-topper__title">Exploring the psychological underpinnings of <a class="block-big-link-text__text-link pagliuca-harvard-life-lab" data-loaded-3="">immune defense.</a></h1>
+                    <h1 class="landing-topper__title">Exploring the psychological underpinnings of <a class="block-big-link-text__text-link ph-lab" data-loaded-3="">immune defense.</a></h1>
                 </div>
                 <div class="landing-topper__right ">
                                     <h2 class="landing-topper__subhead">Our research focuses on understanding how the immune system influences behavior, providing insights into its effects on health and social interactions.</h2>
@@ -21169,7 +21171,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     
           <section class="content-block block-article-teases alignfull" id="section-6">
                   <h2 class="block-article-teases__title">News
-                          <a href="/News" class="block-article-teases__title-link" data-loaded-3="" style="color:#ffffff; text-decoration: none">Read All Stories</a>
+                          <!-- <a href="/News" class="block-article-teases__title-link" data-loaded-3="">Read All</a> -->
                       </h2>
             
             
@@ -21322,7 +21324,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                                                                             
         <div class="lab-tease js-lab-scroll" data-loaded-5="">
         
-            <div class="swiper lab-tease__inner swiper-initialized swiper-horizontal swiper-backface-hidden" data-theme="pagliuca-harvard-life-lab">        
+            <div class="swiper lab-tease__inner swiper-initialized swiper-horizontal swiper-backface-hidden" data-theme="ph-lab">        
                <div class="rq-container">
 		 <h2 class="lab-tease__overline">Our Current Research Questions</h2>
                   <div class="rq-rectangle">Do people engage in more NPIs against disease in higher parasite stress countries?</div>
@@ -21371,22 +21373,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     <ul class="footer__links">
                                             <li class="footer__lab-cards">
                                                                                             <div>
-                                            <a class="footer__lab-card student-i-lab" href="" data-loaded-3="">
+                                            <a class="footer__lab-card st-lab" href="/OurLab" data-loaded-3="">
                                                 <p class="footer__lab-title">Our Lab</p>
-                                                    <img src="triangles.png" width="125">
                                             </a>
                                         </div>
                                                                                                                                                                                                                                                                                     <div>
-                                            <a class="footer__lab-card launch-lab" href="https://innovationlabs.harvard.edu/labs/alumni-launch-lab" data-loaded-3="">
+                                            <a class="footer__lab-card lc-lab" href="/Publications" data-loaded-3="">
                                                 <p class="footer__lab-title">Publications</p>
-                                                                                                    <img src="circle.png" width="165">
 
                                             </a>
                                         </div>
                                                                                                                                                                                                                                                                                     <div>
-                                            <a class="footer__lab-card pagliuca-harvard-life-lab" href="https://innovationlabs.harvard.edu/labs/pagliuca-harvard-life-lab" data-loaded-3="">
+                                            <a class="footer__lab-card ph-lab" href="/People" data-loaded-3="">
                                                 <p class="footer__lab-title">People</p>
-                                                                                                    <img src="square.png" width="165">
 
                                             </a>
                                         </div>
@@ -21396,21 +21395,26 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
         
             <div class="footer__bottom">
-                    <div class="image-container">
+                    <p class="footer__copyright">
+                                    <img src="vu_white.svg" height="70">
+                                </p>
 
-                                    <img src="vu_white.svg" height="90">
-                                </div>
-
-		       <div class="footer-center-text">
-        <p><strong>Tybur Behavioral Immune Research</strong></p> <!-- Bold text -->
-        <p>Van der Boechorststraat 7</p>
-        <p>1081 BT Amsterdam</p>
-    </div>
-    <div class="footer-right-text">
-        <p><strong>Connect</strong></p> <!-- Bold text -->
-        <p>tbir_lab@gmail.com</p>
-        <p>j.m.tybur@vu.nl</p>
-    </div>
+		       <nav aria-label="Utility">
+			       <ul class="footer__bottom-links">
+				       <li>
+					  <p class="footer__link--bottom">
+						  <strong>Tybur Behavioral Immune Research</strong></p>
+        					  <p class="footer__link--bottom">
+							  Van der Boechorststraat 7</p>
+        					  <p class="footer__link--bottom">
+							  1081 BT Amsterdam</p></li>
+    <li>
+        <p class="footer__link--bottom"><strong>Connect</strong></p> <!-- Bold text -->
+        <p class="footer__link--bottom">tbir_lab@gmail.com</p>
+        <p class="footer__link--bottom">j.m.tybur@vu.nl</p>
+    </li>
+                                            </ul>
+			       </nav>
                          
                     </div>
         </footer>
