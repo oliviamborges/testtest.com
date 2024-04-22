@@ -10455,7 +10455,7 @@ a .lazy-img__placeholder.wide {
     width: .725em
 }
 
-.venture-spotlight__venture-name.student-i-lab:before {
+.block-article-teases__title:before {
     --c-bg-light: #7480e5;
     --c-bg: #232262;
     --c-text: #abb4ff;
@@ -15901,32 +15901,6 @@ a .lazy-img__placeholder.wide {
     color: var(--c-text-light)
 }
 
-.block-image__figcaption:before {
-    background-color: #7480e5;
-    color: var(--c-text);
-    content: "";
-    display: inline-block;
-    font-family: "Roboto Mono", monospace;
-    font-size: 12px;
-    font-weight: 400;
-    height: .725em;
-    line-height: 1.45;
-    margin-right: 10px;
-    width: .725em
-}
-.block-article-teases__title:before {
-    background-color: #7480e5;
-    color: var(--c-text);
-    content: "";
-    display: inline-block;
-    font-family: "Roboto Mono", monospace;
-    font-size: 12px;
-    font-weight: 400;
-    height: .725em;
-    line-height: 1.45;
-    margin-right: 10px;
-    width: .725em
-}
 
 @media(min-width: 400px)and (max-width:1999px) {
     .block-image__figcaption:before {
@@ -20854,15 +20828,24 @@ a .lazy-img__placeholder.wide {
                 width: 33.333333%; /* Width divided among three inputs */
             }
         }
+
+.footer-image-container {
+        flex: 1; /* Gives the image container 1 part of the space */
+        display: flex;
+        justify-content: center; /* Centers the image horizontally */
+    }
+.footer-image-container img {
+        max-width: 100px; /* Limits image width to 100px */
+        height: auto; /* Maintains aspect ratio */
+    }
 .footer-center-text {
-        text-align: center; /* Centers the text block */
-        margin-top: 20%; /* Adjusts the distance from the top */
+        flex: 2; /* Gives the center text 2 parts of the space */
+        text-align: center; /* Centers the text */
     }
 .footer-right-text {
-        position: absolute; /* Positions the right text block absolutely */
-        top: 0; /* Aligns it to the top */
-        right: 0; /* Aligns it to the right */
-        padding: 20px; /* Adds some padding around the text */
+        flex: 1; /* Gives the right text 1 part of the space */
+        text-align: right; /* Aligns text to the right */
+        padding: 20px; /* Adds padding */
     }
 </style>
 </head>
@@ -21367,9 +21350,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
         
             <div class="footer__bottom">
-                <p class="footer__notes">
+                    <div class="image-container">
+
                                     <img src="vu_white.svg" height="90">
-                            </p>
+                                </div>
+
 		       <div class="footer-center-text">
         <p><strong>Tybur Behavioral Immune Research</strong></p> <!-- Bold text -->
         <p>Van der Boechorststraat 7</p>
