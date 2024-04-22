@@ -887,8 +887,6 @@ a[data-type=external] {
 .home__lab-tease {
     position: relative;
     padding: 0 0;
-    margin-left: -50vw;          
-    margin-right: -50vw;
     box-sizing: border-box; 
 }
 
@@ -3654,7 +3652,6 @@ a .lazy-img__placeholder.wide {
 .footer-image-container img {
         max-width: 100px;
         height: auto;
-	width:50%;
     }
 .footer-center-text {
         flex: 2; 
@@ -3672,6 +3669,19 @@ a .lazy-img__placeholder.wide {
 	padding: 24px;
 	font-size:16px;
     }
+@media (max-width: 480px) {
+.footer-image-container img {
+        width: 70%;
+    }
+	.footer-center-text {
+ 	padding: 20px;
+	font-size:10px;
+    }
+.footer-right-text {
+	padding: 20px;
+	font-size:10px;
+    }
+	}
 </style>
 </head>
 <body>
