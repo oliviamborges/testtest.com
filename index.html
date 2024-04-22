@@ -1767,7 +1767,10 @@ a[data-type=external] {
 }
 
 .footer__cols {
-    position: relative
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px; /* Adjust padding as needed */
+
 }
 
 @media(min-width: 768px) {
@@ -1795,10 +1798,13 @@ a[data-type=external] {
         padding-left: 10px;
         padding-right: 10px;
         width: 100%
-    }
+	flex: 1;
 }
 
 @media(min-width: 768px)and (min-width:600px) {
+    .footer__cols {
+        flex-direction: column;
+    }
     .footer__col {
         width:50%
     }
@@ -1808,7 +1814,7 @@ a[data-type=external] {
     font-feature-settings: "ss01";
     color: var(--c-text);
     font-family: "IBM Plex Sans Condensed", sans-serif;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 400;
     letter-spacing: -.01em;
     line-height: 1.2;
@@ -1819,7 +1825,7 @@ a[data-type=external] {
 
 @media(min-width: 400px)and (max-width:1999px) {
     .footer__headline {
-        font-size:calc(25px + .75vw)
+        font-size:calc(20px + .74vw)
     }
 }
 
@@ -4156,7 +4162,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                                                                                                                                                                                                                                                                     <div>
                                             <a class="footer__lab-card lc-lab" href="/Publications" data-loaded-3="">
                                                 <p class="footer__lab-title">Publications</p>
-                                                                                                    <img src="circle.png" width="165">
+                                                                                                    <img src="circle.png" width="140">
 
                                             </a>
                                         </div>
