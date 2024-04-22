@@ -11036,7 +11036,7 @@ a .lazy-img__placeholder.wide {
 
 .landing-topper__title {
     color: var(--c-text);
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
     font-size: 40px;
     font-weight: 400;
     letter-spacing: -.02em;
@@ -20804,6 +20804,34 @@ a .lazy-img__placeholder.wide {
 .block-embeddable-form select::-ms-expand,.fui-select::-ms-expand {
     display: none
 }
+	.responsive-menu {
+  display: none;
+  float: right;
+  clear: both;
+}
+
+.responsive-menu-open .responsive-menu {
+  display: block;
+}
+
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+
+#menu {
+  width: 300px;
+  margin: 0;
+  padding: 50px;
+  background: #ededed;
+  list-style-type: none;
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
 </style>
 </head>
 <body>
@@ -20968,7 +20996,14 @@ a .lazy-img__placeholder.wide {
                             <span class="header__menu-lines"></span>
                         </span>
                     </button>
-        
+        <div class="responsive-menu">
+        <ul id="menu">
+          <li>Our Lab</li>
+          <li>Research</li>
+          <li>Publications</li>
+          <li>People</li>
+        </ul>
+      </div>
                 </nav>
             </div>
         </header>
