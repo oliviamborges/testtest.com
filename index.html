@@ -20843,6 +20843,13 @@ a .lazy-img__placeholder.wide {
         
                     <input class="visually-hidden" type="submit" aria-label="Submit search" tabindex="-1">
             </form>
+<script>
+    function submitSearch() {
+        var input = document.getElementById('search-input');
+        var queryField = document.getElementById('search-query');
+        queryField.value = 'site:tbirlab.github.io ' + input.value;
+    }
+</script>
                                 </div>
                             
                             <div class="header__links">
