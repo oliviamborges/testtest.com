@@ -5672,7 +5672,15 @@ a[data-type=external] {
 .header__links {
     display: none
 }
-
+	
+.header__linksmenu {
+        -ms-flex-align:center;
+        align-items: center;
+        display: -ms-flexbox;
+        display: flex;
+        margin-left: auto
+    }
+	
 @media(min-width: 1070px) {
     .header__links {
         -ms-flex-align:center;
@@ -20990,8 +20998,8 @@ a .lazy-img__placeholder.wide {
                             </div>
                         </div>
                     </div>
-                        <div class="header__links">
-                                <ul class="header__links-list">                                                            
+                        <div class="header__linksmenu">
+                                <ul class="header__links-listmenu">                                                            
 			<li class="header__item js--flyout" data-loaded-2="">
                     <button class="header__menu js--dialog__trigger" aria-expanded="false" aria-haspopup="true" aria-controls="menu" aria-label="Open menu" data-loaded-7="">
                         <span class="header__menu-hamburger">
