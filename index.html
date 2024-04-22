@@ -20834,16 +20834,17 @@ a .lazy-img__placeholder.wide {
     flex-wrap: wrap; /* Wrap items when not enough space */
     margin: 0 auto;
     padding: 10px; /* Space on the outside */
-    gap: 10px; /* Space between items */
+    gap: 50px; /* Space between items */
   }
 
   .rq-rectangle {
     border: 1px solid #c1f5a8; 
     padding: 20px;
     flex-grow: 1;
-    flex-basis: calc(33.333% - 20px); /* Three columns, accounting for the gap */
+    flex-basis: calc(33.333% - 60px); /* Three columns, accounting for the gap */
     text-align: left;
     font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-size: calc(28.75px + 1.5625vw);
     font-weight: 700;
     min-height: 100px; /* Minimum height for better visual */
   }
@@ -21299,10 +21300,9 @@ document.addEventListener('DOMContentLoaded', function() {
                                                                                             
         <div class="lab-tease js-lab-scroll" data-loaded-5="">
         
-            <div class="swiper lab-tease__inner swiper-initialized swiper-horizontal swiper-backface-hidden" data-theme="pagliuca-harvard-life-lab">
-                <h2 class="lab-tease__overline">Our Current Research Questions</h2>
-        
+            <div class="swiper lab-tease__inner swiper-initialized swiper-horizontal swiper-backface-hidden" data-theme="pagliuca-harvard-life-lab">        
                <div class="rq-container">
+		 <h2 class="lab-tease__overline">Our Current Research Questions</h2>
                   <div class="rq-rectangle">Do people engage in more NPIs against disease in higher parasite stress countries?</div>
                   <div class="rq-rectangle">How does comfort with interpersonal contact vary within and across countries?</div>
                   <div class="rq-rectangle">Are disgust elicitors universal across populations?</div>
