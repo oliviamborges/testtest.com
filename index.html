@@ -5398,7 +5398,10 @@ a[data-type=external] {
     --c-border-dark: #abb4ff;
     --c-border: rgba(116,128,229,.5);
     --c-border-light: rgba(116,128,229,.2);
-    --c-text-light: rgba(171,180,255,.73)
+    --c-text-light: rgba(171,180,255,.73);
+	background: url(triangles.png) 0 0;
+	  transform: rotate(30deg);
+
 }
 
 .footer__lab-card.lc-lab {
@@ -20811,62 +20814,65 @@ a .lazy-img__placeholder.wide {
   cursor: url(pause.svg), auto;
 }
 .form__input, .form__input__btn {
-            background-color: black; /* Black background */
-            color: white; /* White text */
-            border: 2px solid white; /* White stroke */
-            padding: 10px; /* Padding for better visual spacing */
-            margin: 5px 0; /* Margin for spacing between fields */
-            width: 90%; /* Adjust width as necessary */
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+            padding: 10px;
+            margin: 5px 0; 
+            width: 90%; 
         }
 
         .form__input__btn {
-            cursor: pointer; /* Cursor changes to pointer when hovering over the button */
+            cursor: pointer; 
         }
 
         .col-12 {
             display: flex;
-            justify-content: center; /* Center align the input fields */
+            justify-content: center; 
             padding: 5px;
         }
 
         /* Responsive adjustments */
-        @media (min-width: 992px) { /* Adjusts for large screens */
+        @media (min-width: 992px) { 
             .col-lg-4 {
                 flex: 0 0 auto;
-                width: 33.333333%; /* Width divided among three inputs */
+                width: 33.333333%; 
             }
         }
 .rq-container {
     display: flex;
-    justify-content: space-evenly; /* Distribute space evenly */
-    flex-wrap: wrap; /* Wrap items when not enough space */
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
     margin: 0 auto;
-    padding: 190px; /* Space on the outside */
-    gap: 50px; /* Space between items */
+    padding-top: 190px;
+    padding-bottom: 190px; 
+    padding-left: 150px; 
+    padding-left: 150px; 
+    gap: 50px;
   }
 
   .rq-rectangle {
     border: 1px solid #c1f5a8; 
     padding: 55px;
     flex-grow: 1;
-    flex-basis: calc(33.333% - 60px); /* Three columns, accounting for the gap */
+    flex-basis: calc(33.333% - 60px);
     text-align: left;
     font-family: "IBM Plex Sans Condensed", sans-serif;
     font-size: calc(3.75px + 1.2625vw);
     font-weight: 700;
-    min-height: 100px; /* Minimum height for better visual */
+    min-height: 100px; 
   }
 @media (max-width: 768px) {
     .rq-rectangle {
       padding: 43px;
       font-size: calc(10.75px + 1.2625vw);
-      flex-basis: calc(50% - 20px); /* Two columns on smaller screens */
+      flex-basis: calc(50% - 20px); 
     }
     .rq-container {
-    padding-top: 190px; /* Space on the outside */
-    padding-bottom: 190px; /* Space on the outside */
-    padding-left: 70px; /* Space on the outside */
-    padding-right: 70px; /* Space on the outside */
+    padding-top: 190px; 
+    padding-bottom: 190px; 
+    padding-left: 70px;
+    padding-right: 70px; 
     }
   }
 
@@ -20874,36 +20880,36 @@ a .lazy-img__placeholder.wide {
     .rq-rectangle {
       padding: 43px;
       font-size: calc(10.75px + 1.2625vw);
-      flex-basis: 100%; /* Single column on very small screens */
+      flex-basis: 100%; 
     }
     .rq-container {
-    padding-top: 190px; /* Space on the outside */
-    padding-bottom: 190px; /* Space on the outside */
-    padding-left: 70px; /* Space on the outside */
-    padding-right: 70px; /* Space on the outside */
+    padding-top: 190px;
+    padding-bottom: 190px; 
+    padding-left: 70px; 
+    padding-right: 70px; 
     }
   }
 
 .footer-image-container {
-        flex: 1; /* Gives the image container 1 part of the space */
+        flex: 1; 
         display: flex;
-        justify-content: center; /* Centers the image horizontally */
+        justify-content: center; 
     }
 .footer-image-container img {
-        max-width: 100px; /* Limits image width to 100px */
-        height: 60px; /* Maintains aspect ratio */
+        max-width: 100px; 
+        height: 60px; 
     }
 .footer-center-text {
-        flex: 2; /* Gives the center text 2 parts of the space */
-        text-align: center; /* Centers the text */
+        flex: 2; 
+        text-align: center; 
 	color:white;
 	font-family: "IBM Plex Sans", sans-serif;
-	padding: 13px; /* Adds padding */
+	padding: 13px;
     }
 .footer-right-text {
-        flex: 1; /* Gives the right text 1 part of the space */
-        text-align: right; /* Aligns text to the right */
-        padding: 13px; /* Adds padding */
+        flex: 1; 
+        text-align: right; 
+        padding: 13px;
 	color:white;
 	font-family: "IBM Plex Sans", sans-serif;
     }
