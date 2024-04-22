@@ -5101,6 +5101,8 @@ a[data-type=external] {
 .dropdown__link {
     -ms-flex-align: baseline;
     align-items: baseline;
+    text-align:right;
+    float: right;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -6063,11 +6065,9 @@ a .lazy-img__placeholder.wide {
 
 @media(pointer: fine) {
     .video-pause-button:hover .video-pause-button__icons {
-        left:calc(var(--mouse-x)*1px);
         opacity: 1;
         position: fixed;
         right: auto;
-        top: calc(var(--mouse-y)*1px);
         transform: translate3d(-50%,-50%,0)
     }
 }
