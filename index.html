@@ -21074,24 +21074,27 @@ a .lazy-img__placeholder.wide {
             <div class="lazy-img__wrapper js-video lazy-img__wrapper--video landing-topper__img-wrapper" data-loaded-6="">
         
                             
-              <video width="100%" height="100%" muted="" playsinline="" loop="" data-poster="video.png" autoplay="" class="lazy-img lazy-video landing-topper__img lazyloaded" src="tbir_med.mp4" alt="" type="video/mp4">
+              <video id="myVideo" width="100%" height="100%" muted="" playsinline="" loop="" data-poster="video.png" autoplay="" class="lazy-img lazy-video landing-topper__img lazyloaded" src="tbir_med.mp4" alt="" type="video/mp4">
               </video>
-        
-                        <span class="lazy-img__placeholder" style="padding-top: 66.66%"></span>
-              
-              <button class="video-pause-button" aria-label="Pause">
-                <span class="video-pause-button__icons">
-        
-                <svg aria-hidden="true" viewBox="0 0 25 25" fill="none" class="video-pause-button__icon video-pause-button__icon--play">
-                  <path d="M9 8L18 12.5L9 17V8Z" fill="currentColor"></path>
-                </svg>
-                <svg aria-hidden="true" viewBox="0 0 25 25" fill="none" class="video-pause-button__icon video-pause-button__icon--pause">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11 8H8V17H11V8ZM17 8H14V17H17V8Z" fill="currentColor"></path>
-                </svg>
-        
-        
-                </span>
-              </button>
+		    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var video = document.getElementById('myVideo'); // Get the video element by ID
+
+    video.addEventListener('click', function() { // Add click event listener to the video
+        if (video.paused) {
+            video.play(); // Play the video if it is paused
+        } else {
+            video.pause(); // Pause the video if it is playing
+        }
+    });
+
+    // Optional: Hide the custom button as we are now using the video click to toggle play/pause
+    var pauseButton = document.querySelector('.video-pause-button');
+    if (pauseButton) {
+        pauseButton.style.display = 'none';
+    }
+});
+</script>
         
         
             </div>
