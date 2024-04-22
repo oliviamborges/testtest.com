@@ -2272,6 +2272,74 @@ a[data-type=external] {
     transform: translate3d(0,8px,0)
 }
 
+	
+.lazy-img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity .4s cubic-bezier(.16,1,.3,1);
+    width: 100%
+}
+
+@media(prefers-reduced-motion:reduce) {
+    .lazy-img {
+        transition: none
+    }
+}
+
+.lazy-img.lazyloaded {
+    opacity: 1
+}
+
+.lazy-img__wrapper .lazy-img {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%
+}
+
+.lazy-img__wrapper {
+    line-height: 0;
+    overflow: hidden;
+    position: relative
+}
+
+.lazy-img__placeholder {
+    background-color: var(--c-bg-light);
+    display: block;
+    pointer-events: none;
+    transition: opacity .4s cubic-bezier(.16,1,.3,1);
+    width: 100%
+}
+
+@media(prefers-reduced-motion:reduce) {
+    .lazy-img__placeholder {
+        transition: none
+    }
+}
+
+.lazyloaded+.lazy-img__placeholder {
+    opacity: 0
+}
+
+.lazy-img__placeholder.wide {
+    padding-bottom: 66.6%
+}
+
+@media(min-width: 600px) {
+    .lazy-img__placeholder.wide {
+        padding-bottom:50%
+    }
+}
+
+a .lazy-img__placeholder.wide {
+    pointer-events: none
+}
+
 .search-form {
     -ms-flex-align: center;
     align-items: center;
