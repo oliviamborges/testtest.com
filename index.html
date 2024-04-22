@@ -5,8 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TBIR Lab</title>
 	  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<!-- Bootstrap CSS CDN -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -25,23 +23,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,img,menu,nav,sectio
     display: block
 }
 
-audio,canvas,video {
+video {
     *zoom:1;display: inline-block;
     *display: inline;
     max-width: 100%
 }
 
-audio:not([controls]) {
-    display: none;
-    height: 0
-}
-
 [hidden] {
     display: none!important
-}
-
-svg:not(:root) {
-    overflow: hidden
 }
 
 body {
@@ -322,20 +311,6 @@ html {
     --c-error: #ea3d3e
 }
 
-.theme-black {
-    --c-bg-light: hsla(0,0%,100%,.18);
-    --c-bg: #000;
-    --c-border-light: hsla(0,0%,100%,.18);
-    --c-border: hsla(0,0%,100%,.18);
-    --c-border-dark: #fff;
-    --c-pop: #ea3d3e;
-    --c-text-light: hsla(0,0%,100%,.56);
-    --c-text-light-large: hsla(0,0%,100%,.36);
-    --c-text: #fff;
-    --c-text-rbg: 255,255,255;
-    --c-error: #ffe72d
-}
-
 :root {
     --rotation: 0deg
 }
@@ -455,28 +430,6 @@ a[data-type=external] {
     border-color: var(--c-text);
     color: var(--c-text);
     cursor: pointer
-}
-
-.rich-text {
-    word-wrap: break-word;
-    color: var(--c-text);
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.68;
-    overflow-wrap: break-word
-}
-
-@media(min-width: 400px)and (max-width:1999px) {
-    .rich-text {
-        font-size:calc(15px + .25vw)
-    }
-}
-
-@media(min-width: 2000px) {
-    .rich-text {
-        font-size:20px
-    }
 }
 
 .align-left .rich-text h1 {
