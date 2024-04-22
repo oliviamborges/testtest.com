@@ -20833,30 +20833,46 @@ a .lazy-img__placeholder.wide {
     justify-content: space-between; /* Distribute space evenly */
     flex-wrap: wrap; /* Wrap items when not enough space */
     margin: 0 auto;
-    padding: 10px; /* Space on the outside */
+    padding: 190px; /* Space on the outside */
     gap: 50px; /* Space between items */
   }
 
   .rq-rectangle {
     border: 1px solid #c1f5a8; 
-    padding: 20px;
+    padding: 55px;
     flex-grow: 1;
     flex-basis: calc(33.333% - 60px); /* Three columns, accounting for the gap */
     text-align: left;
     font-family: "IBM Plex Sans Condensed", sans-serif;
-    font-size: calc(28.75px + 1.5625vw);
+    font-size: calc(3.75px + 1.2625vw);
     font-weight: 700;
     min-height: 100px; /* Minimum height for better visual */
   }
 @media (max-width: 768px) {
     .rq-rectangle {
+      padding: 43px;
+      font-size: calc(10.75px + 1.2625vw);
       flex-basis: calc(50% - 20px); /* Two columns on smaller screens */
+    }
+    .rq-container {
+    padding-top: 190px; /* Space on the outside */
+    padding-bottom: 190px; /* Space on the outside */
+    padding-left: 70px; /* Space on the outside */
+    padding-right: 70px; /* Space on the outside */
     }
   }
 
 @media (max-width: 480px) {
     .rq-rectangle {
+      padding: 43px;
+      font-size: calc(10.75px + 1.2625vw);
       flex-basis: 100%; /* Single column on very small screens */
+    }
+    .rq-container {
+    padding-top: 190px; /* Space on the outside */
+    padding-bottom: 190px; /* Space on the outside */
+    padding-left: 70px; /* Space on the outside */
+    padding-right: 70px; /* Space on the outside */
     }
   }
 
