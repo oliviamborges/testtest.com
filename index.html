@@ -21062,15 +21062,26 @@ a .laz-img__placeholder.wide {
 .custom-shape-divider-bottom-1713874859 .shape-fill {
     fill: #FFF7EA;
 }
-.block-statistics__labela {
-    color: #cde982;
+.block-statistics__label {
+    color: #004534;
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+
 }
-.block-statistics__labelb {
-    color: #fabdac;
+
+@media(min-width: 400px)and (max-width:1999px) {
+    .block-statistics__label {
+        font-size:calc(18px + .25vw)
+    }
 }
-.block-statistics__labelc {
-    color: #f4e55b;
+@media(max-width: 500px) {
+    .block-statistics__label {
+        font-size:calc(15px + .25vw)
+    }
 }
+
 </style>
 </head>
 <body>
