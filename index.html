@@ -1818,6 +1818,30 @@ a[data-type=external] {
     scroll-snap-type: y mandatory
 }
 
+	
+.header__border {
+    -webkit-animation: gradientMove 30s linear infinite;
+    animation: gradientMove 30s linear infinite;
+    background: linear-gradient(90deg,#fff7ea,#f9bdac,#ffc73b,#f5e65b,#f9cddc,#cce981,#baedd6,#fff7ea);
+    background-size: 200% 100%;
+    height: 12px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.is-pic .header__border {
+    display: none
+}
+
+@media(prefers-reduced-motion:reduce) {
+    .header__border {
+        -webkit-animation: none;
+        animation: none
+    }
+}
+	
 .art-landing__body {
     margin-bottom: 100px;
     padding-left: 20px;
@@ -21138,6 +21162,8 @@ a .laz-img__placeholder.wide {
 													
         <header class="header theme-white">
             <div class="header__inner">
+		                <div class="header__border"></div>
+
         
                 <nav class="header__main" aria-label="Primary">
                     <div class="header__logo">
