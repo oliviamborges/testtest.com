@@ -14846,6 +14846,20 @@ a .laz-img__placeholder.wide {
 
     }
 }
+@media(min-width: 1070px) {
+    .align-center .content-block>* {
+        grid-column-end:10;
+        grid-column-start: 4
+    }
+
+    .content-blocka {
+        grid-column-gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+	        position: relative;
+
+    }
+}
 
 .content-block:first-child {
     margin-top: 0
@@ -17192,8 +17206,8 @@ a .laz-img__placeholder.wide {
 }
 
 .block-statistics__list {
-    border-bottom: 1px solid var(--c-border);
-    border-top: 1px solid var(--c-border-dark)
+    border-bottom: 0px solid var(--c-border);
+    border-top: 0px solid var(--c-border-dark)
 }
 
 @media(min-width: 768px) {
@@ -17217,7 +17231,7 @@ a .laz-img__placeholder.wide {
     }
 
     .block-statistics__list-item:not(:last-child) {
-        border-bottom: 1px solid var(--c-border)
+        border-bottom: 0px solid var(--c-border)
     }
 }
 
@@ -17229,15 +17243,21 @@ a .laz-img__placeholder.wide {
     }
 
     .block-statistics__list-item:first-child {
-        padding-left: 0
+        padding-left: 0;
+	    background-color: #cce981;
     }
 
+
     .block-statistics__list-item:last-child {
-        padding-right: 0
+        padding-right: 0;
+	    	    background-color: #f5e65b;
+
     }
 
     .block-statistics__list-item:not(:last-child) {
-        border-right: 1px solid var(--c-border)
+        border-right: 0px solid var(--c-border);
+	    	    background-color: #f9bdac;
+
     }
 }
 
@@ -21461,7 +21481,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
                                     </main>
 	    
-<section class="content-block block-statistics sm alignfulla">
+<section class="content-blocka block-statistics sm alignfulla">
   
   <dl class="block-statistics__list">
         <div class="block-statistics__list-item">
