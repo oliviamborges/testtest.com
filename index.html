@@ -17244,8 +17244,12 @@ a .laz-img__placeholder.wide {
 }
 
 .block-statistics__list {
-    border-bottom: 0px solid var(--c-border);
-    border-top: 0px solid var(--c-border-dark);
+    justify-content: space-around; /* Distributes space around items */
+    align-items: stretch; /* Stretches items to fill the container vertically */
+    width: 100%; /* Container takes full width of its parent */
+    margin: 0; /* Remove default margins if any */
+    padding: 0; /* Remove default padding if any */
+    list-style: none; /* Removes bullet points from list if it's an <ul> */
 	aspect-ratio: 22 / 1 ;
 	overflow: hidden; 
 		display: flex;
