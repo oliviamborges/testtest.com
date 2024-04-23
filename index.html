@@ -21069,12 +21069,12 @@ a .lazy-img__placeholder.wide {
               <video id="myVideo" width="100%" height="100%" muted="" playsinline="" loop="" data-poster="video.png" autoplay="" class="lazy-video" src="tbir_final.mp4" alt="" type="video/mp4">
               </video>
 		    <script>
-document.addeveListener('DOMContentLoaded', function() {
-    var video = document.getElementById('myVideo'); 
+document.addEventListener('DOMContentLoaded', function() {
+    var video = document.getElementById('myVideo');
 
-    video.addeveListener('click', function() {
+    video.addEventListener('click', function() { 
         if (video.paused) {
-            video.play();
+            video.play(); 
         } else {
             video.pause(); 
         }
