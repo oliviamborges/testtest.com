@@ -5248,7 +5248,7 @@ a[data-type=external] {
     letter-spacing: -.00em;
     line-height: 1.2;
     margin-bottom: 40px;
-    max-width: 600px;
+    max-width: 900px;
 }
 
 @media(min-width: 400px)and (max-width:1999px) {
@@ -5276,7 +5276,8 @@ a[data-type=external] {
 
 .footer__cta-link {
     display: block;
-    margin-bottom: 80px
+    margin-bottom: 80px;
+	width: 50%
 }
 
 .footer__links {
@@ -20928,7 +20929,12 @@ a .laz-img__placeholder.wide {
 
 .col-12 {
         display: flex;
-        justify-content: center; 
+        justify-content: left; 
+        padding: 5px;
+}
+.col-15 {
+        display: flex;
+        justify-content: left; 
         padding: 5px;
 }
 
@@ -21534,8 +21540,8 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="col-12 col-lg-4">
             <input class="form__input" type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="E-mail">
         </div>
-        <div class="col-12 col-lg-4">
-            <input class="form__input__btn" type="submit" name="subscribe" id="mc-embedded-subscribe" value="Subscribe">
+        <div class="col-15">
+            <input class="form__input__btn" type="submit" name="subscribe" id="mc-embedded-subscribe" value="   Subscribe   ">
         </div>
     </form>
                             </span>
