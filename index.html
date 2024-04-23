@@ -5217,7 +5217,7 @@ a[data-type=external] {
     }
 
     .footer__col {
-        -ms-flex-preferred-size: auto;
+        /*-ms-flex-preferred-size: auto;
         -ms-flex-positive: 0;
         -ms-flex-negative: 1;
         -ms-flex-align: start;
@@ -5226,7 +5226,7 @@ a[data-type=external] {
         -ms-flex-direction: column;
         flex-direction: column;
         flex-grow: 0;
-        flex-shrink: 1;
+        flex-shrink: 1;*/
         padding-left: 10px;
         padding-right: 10px;
         width: 100%
@@ -5235,7 +5235,7 @@ a[data-type=external] {
 
 @media(min-width: 768px)and (min-width:600px) {
     .footer__col {
-        width:50%
+        /*width:50%*/
     }
 }
 
@@ -14883,6 +14883,11 @@ a .laz-img__placeholder.wide {
     background-color: #ffc73b;
     margin-bottom:0px;
 }
+.content-block.alignfulla {
+    max-width: none;
+    position: relative;
+    margin-bottom:0px;
+}
 
 .content-block.alignfull>* {
     grid-column-end: 3;
@@ -21036,6 +21041,15 @@ a .laz-img__placeholder.wide {
 .custom-shape-divider-bottom-1713874859 .shape-fill {
     fill: #FFF7EA;
 }
+.block-statistics__labela {
+    background-color: #cde982;
+}
+.block-statistics__labelb {
+    background-color: #fabdac;
+}
+.block-statistics__labelc {
+    background-color: #f4e55b;
+}
 </style>
 </head>
 <body>
@@ -21447,24 +21461,17 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
                                     </main>
 	    
-<section class="content-block block-statistics sm alignfull">
+<section class="content-block block-statistics sm alignfulla">
   
   <dl class="block-statistics__list">
         <div class="block-statistics__list-item">
-      <dt class="block-statistics__label">i-lab ventures since 2011</dt>
-      <dd class="block-statistics__figure">5,000</dd>
+      <dt class="block-statistics__labela">Our Lab</dt>
     </div>
         <div class="block-statistics__list-item">
-      <dt class="block-statistics__label">of Harvard student body are members</dt>
-      <dd class="block-statistics__figure">11%</dd>
+      <dt class="block-statistics__labelb">Publications</dt>
     </div>
         <div class="block-statistics__list-item">
-      <dt class="block-statistics__label">raised by i-lab ventures</dt>
-      <dd class="block-statistics__figure">$7B+</dd>
-    </div>
-        <div class="block-statistics__list-item">
-      <dt class="block-statistics__label">Crunchbase ranking for funded founders</dt>
-      <dd class="block-statistics__figure">#2</dd>
+      <dt class="block-statistics__labelc">People</dt>
     </div>
       </dl>
 
