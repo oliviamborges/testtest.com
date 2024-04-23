@@ -365,7 +365,8 @@ body {
     font-family: "Source Sans 3", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.45
+    line-height: 1.45;
+    background-color:#f6f6f4;
 }
 
 @media(min-width: 400px)and (max-width:1999px) {
@@ -5641,11 +5642,12 @@ a[data-type=external] {
 }
 
 .header__wordmark {
-    font-weight: 700;
+    font-weight: 900;
     line-height: 1.1;
     margin-right: auto;
     -ms-transform: translateY(-1px);
-    transform: translateY(-1px)
+    transform: translateY(-1px);
+    font-size: 25px;
 }
 
 @media(min-width: 1070px) {
@@ -5667,7 +5669,7 @@ a[data-type=external] {
 @media(min-width: 1070px) {
     .header__nav-bottom {
         -ms-flex-pack:justify;
-        border-top: 1px solid var(--c-border-dark);
+        border-top: 0px solid var(--c-border-dark);
         display: -ms-flexbox;
         display: flex;
         justify-content: space-between;
@@ -5689,6 +5691,7 @@ a[data-type=external] {
 	
 @media(min-width: 1070px) {
     .header__links {
+	border-top: 1px solid var(--c-border-dark);
         -ms-flex-align:center;
         align-items: center;
         display: -ms-flexbox;
@@ -11031,10 +11034,11 @@ a .lazy-img__placeholder.wide {
 .landing-topper__title {
     color: var(--c-text);
     font-family: "Playfair Display", serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 400;
     letter-spacing: -.02em;
-    line-height: 1
+    line-height: 1.5;
+    padding-bottom: 50px;
 }
 
 @media(min-width: 400px)and (max-width:1999px) {
@@ -12986,9 +12990,9 @@ a .lazy-img__placeholder.wide {
 }
 
 .lab-tease__overline {
-    color: var(--c-text);
-    font-family: "Roboto Mono", monospace;
-    font-size: 12px;
+    color: #241c15;
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
     font-weight: 400;
     left: 20px;
     line-height: 1.2;
@@ -15021,7 +15025,7 @@ a .lazy-img__placeholder.wide {
     display: -ms-flexbox;
     display: flex;
     font-family: "Playfair Display", serif;
-    font-size: 12px;
+    font-size: 40px;
     font-weight: 400;
     justify-content: space-between;
     line-height: 1.45;
@@ -15122,14 +15126,15 @@ a .lazy-img__placeholder.wide {
 .block-big-link-text__text-link:focus.ph-lab,.block-big-link-text__text-link:hover.ph-lab {
     --c-bg-light: #84a873;
     --c-bg: #d8eacc;
-    --c-text: #c1f4a8;
+    --c-text: #241c15;
     --c-pop: #fab066;
     --c-border-dark: #c1f4a8;
     --c-border: rgba(132,168,115,.5);
     --c-border-light: rgba(132,168,115,.2);
     --c-text-light: rgba(193,244,168,.66);
     -webkit-text-decoration-color: var(--c-bg-light);
-    text-decoration-color: var(--c-bg-light)
+    text-decoration-color: var(--c-bg-light);
+    font-style: italic;
 }
 
 .block-big-link-text__text-link:focus.lc-lab,.block-big-link-text__text-link:hover.lc-lab {
@@ -15860,7 +15865,7 @@ a .lazy-img__placeholder.wide {
 
 .block-image__figcaption {
     color: var(--c-text);
-    font-family: "Roboto Mono", monospace;
+    font-family: "Playfair Display", serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.45;
