@@ -5293,7 +5293,7 @@ a[data-type=external] {
     width: 100%
 }
 .footer__links a:hover {
-    color: #baedd6;
+    color: #004534;
 }
 
 @media(min-width: 400px)and (max-width:1999px) {
@@ -6024,7 +6024,7 @@ a[data-type=external] {
     bottom: 0;
     height: 100%;
     left: 0;
-    position: absolute;
+    position: relative;
     right: 0;
     top: 0;
     width: 100%
@@ -9915,12 +9915,13 @@ a .lazy-img__placeholder.wide {
 
 .big-intro__text {
     color: #004534;
-    font-family: "Outfit", sans-serif;
+    font-family: "Jost", sans-serif;
     font-size: 35px;
     font-weight: 600;
     letter-spacing: -.02em;
     line-height: 1.1;
-    position: relative
+    position: relative;
+    font-style: italic;
 }
 
 @media(min-width: 400px)and (max-width:1999px) {
@@ -13008,7 +13009,7 @@ a .lazy-img__placeholder.wide {
 .lab-tease__overline {
     color: #004634;
     font-family: "Jost", sans-serif;
-    font-size: 22px;
+    font-size: 27px;
     font-style: italic;
     font-weight: 600;
     left: 20px;
@@ -13024,7 +13025,7 @@ a .lazy-img__placeholder.wide {
 
 @media(min-width: 2000px) {
     .lab-tease__overline {
-      font-size: 22px;
+      font-size: 27px;
     }
 }
 
@@ -13058,7 +13059,7 @@ a .lazy-img__placeholder.wide {
 
 @media(min-width: 2000px) {
     .lab-tease__overline:before {
-        font-size:14px
+        font-size:18px
     }
 }
 
@@ -20843,8 +20844,8 @@ a .lazy-img__placeholder.wide {
     justify-content: space-evenly; 
     flex-wrap: wrap;
     margin: 0 auto;
-    padding-top: 240px;
-    padding-bottom: 240px; 
+    padding-top: 250px;
+    padding-bottom: 250px; 
     padding-left: 150px; 
     padding-right: 150px; 
     gap: 50px;
@@ -20863,15 +20864,17 @@ a .lazy-img__placeholder.wide {
     font-weight: 600;
     min-height: 100px; 
   }
-  .rq-rectangle:hover { 
-    background-color: #004534;
-    border: 2px solid #004534; 
-    border-radius: 30px;
-    color: #baedd6;
-  }
-.rq-rectangle a:hover { 
-    color: #baedd6;
-  }
+.rq-rectangle a {
+  display: block; 
+  height: 100%;
+  color: #004534;
+  text-decoration: none; 
+}
+
+.rq-rectangle:hover, .rq-rectangle a:hover {
+  background-color: #004534;
+  color: #b9ecd5; 
+}
 @media (max-width: 768px) {
     .rq-rectangle {
       padding: 43px;
@@ -21362,13 +21365,9 @@ document.addEventListener('DOMContentLoaded', function() {
       
         <img class="lazy-img block-cta__img lazyautosizes lazyloaded" src="vu_building.jpg">
 
-        <span class="lazy-img__placeholder" style="padding-top: 100%"></span>
-
+        
           </div>
-  				</figure>
-
-									<h1 class="big-intro__caption"><p><strong>Vrije Universiteit Amsterdam</strong><br>De Boelelaan 1105<br>1081 HV Amsterdam</p></h1>
-							</div>
+  				</figure>							</div>
 			</div>
 </div>
 			</section>
@@ -21412,7 +21411,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                                                                             <div>
                                             <a class="footer__lab-card st-lab" href="/testtest.com/OurLab" data-loaded-3="">
                                                 <p class="footer__lab-title">Our Lab</p>
-						    <img src="triangles.png" width="70%">
+						    <img src="triangles.png" width="65%">
                                             </a>
                                         </div>
                                                                                                                                                                                                                                                                                     <div>
@@ -21425,7 +21424,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                                                                                                                                                                                                                                                                     <div>
                                             <a class="footer__lab-card ph-lab" href="/testtest.com/People" data-loaded-3="">
                                                 <p class="footer__lab-title">People</p>
-						    <img src="square.png" width="90%">
+						    <img src="square.png" width="85%">
 
                                             </a>
                                         </div>
