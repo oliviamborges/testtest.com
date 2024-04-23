@@ -5255,6 +5255,7 @@ a[data-type=external] {
 @media(min-width: 400px)and (max-width:1999px) {
     .footer__headline {
         font-size:calc(20px + .75vw)
+	    max-width:1500px;
     }
 }
 
@@ -21516,15 +21517,20 @@ document.addEventListener('DOMContentLoaded', function() {
 <section class="content-blocka block-statistics sm alignfulla">
   
   <dl class="block-statistics__list">
-        <div class="block-statistics__list-item">
-      <dt class="block-statistics__labela">Our Lab</dt>
+        <div class="block-statistics__list-item" style="display: flex; align-items: center;">
+		<a href="/OurLab" style="display: flex; justify-content: space-between; width: 100%; text-decoration: none;">
+      <dt class="block-statistics__labela" style="flex: 1;">Our Lab</dt>
+			<img src="circle.png">
+		</a>
     </div>
         <div class="block-statistics__list-item">
-      <dt class="block-statistics__labela">Publications</dt>
+				<a href="/Publications">
+      <dt class="block-statistics__labela">Publications</dt></a>
 
     </div>
         <div class="block-statistics__list-item">
-      <dt class="block-statistics__labela">People</dt>
+				<a href="/People">
+      <dt class="block-statistics__labela">People</dt></a>
 
     </div>
       </dl>
