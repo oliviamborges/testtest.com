@@ -17260,7 +17260,6 @@ a .laz-img__placeholder.wide {
     transform: rotate(30deg);  /* Rotate image by 30 degrees on hover */
 }
     .block-statistics__list-item:first-child {
-        padding-left: 0;
 	    background-color: #cce981;
     }
 
@@ -17268,7 +17267,6 @@ a .laz-img__placeholder.wide {
 	    background-color: #f5e55b;
     }
 	    .block-statistics__list-item:not(:first-child):not(:last-child) {
-        border-bottom: 0px solid var(--c-border);
 	    	    	    background-color: #f9bdac;
 
     }
@@ -17279,40 +17277,36 @@ a .laz-img__placeholder.wide {
     }
 
     .block-statistics__list-item:not(:last-child) {
-        border-bottom: 0px solid var(--c-border);
 
     }
 }
 
 @media(min-width: 768px) {
     .block-statistics__list-item {
-        -ms-flex:1;
+ /*       -ms-flex:1;
         flex: 1;
         padding: 40px 20px;
-	    	    background-color: #cce981;
+	    	    background-color: #cce981;*/
     }
 
     .block-statistics__list-item:first-child {
-        padding-left: 0;
 	    background-color: #cce981;
     }
 
 
     .block-statistics__list-item:last-child {
-        padding-right: 0;
 	    	    background-color: #f5e65b;
 
     }
 
     .block-statistics__list-item:not(:last-child) {
-        border-right: 0px solid var(--c-border);
 
     }
 }
 
 @media(min-width: 1070px) {
     .block-statistics__list-item {
-        padding:40px
+  /*      padding:40px*/
     }
 }
 
@@ -21550,11 +21544,11 @@ document.addEventListener('DOMContentLoaded', function() {
 <section class="content-blocka block-statistics sm alignfulla">
   
   <dl class="block-statistics__list">
-        <div class="block-statistics__list-item" style="display: flex; align-items: center;">
+<div class="block-statistics__list-item" style="display: flex; align-items: center;">
 		<a href="/OurLab" style="display: flex; justify-content: space-between; width: 100%; text-decoration: none;">
-      <dt class="block-statistics__labela">Our Lab</dt>
+      <dt class="block-statistics__labela">Our Lab</dt></a>
 			<img src="triangles.png">
-		</a>
+
     </div>
 <div class="block-statistics__list-item" style="display: flex; align-items: center;">
 		<a href="/Publications" style="display: flex; justify-content: space-between; width: 100%; text-decoration: none;">
