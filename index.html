@@ -17220,7 +17220,15 @@ a .laz-img__placeholder.wide {
     -ms-flex-direction: column;
     flex-direction: column
 }
+    .block-statistics__list-item:first-child {
+        padding-left: 0;
+	    background-color: #cce981;
+    }
+	    .block-statistics__list-item:not(:first-child):not(:last-child) {
+        border-bottom: 0px solid var(--c-border);
+	    	    	    background-color: #f9bdac;
 
+    }
 @media(min-width: 0)and (max-width:767px) {
     .block-statistics__list-item {
 	    	    background-color: #cce981;
@@ -17229,7 +17237,6 @@ a .laz-img__placeholder.wide {
 
     .block-statistics__list-item:not(:last-child) {
         border-bottom: 0px solid var(--c-border);
-	    	    	    background-color: #f9bdac;
 
     }
 }
@@ -17256,7 +17263,6 @@ a .laz-img__placeholder.wide {
 
     .block-statistics__list-item:not(:last-child) {
         border-right: 0px solid var(--c-border);
-	    	    background-color: #f9bdac;
 
     }
 }
@@ -21064,9 +21070,10 @@ a .laz-img__placeholder.wide {
 .block-statistics__labela {
     color: #004534;
     font-family: "Jost", sans-serif;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 600;
     font-style: italic;
+    padding-left: 30px;
 
 }
 
