@@ -2339,6 +2339,7 @@ a[data-type=external] {
 
 .page__body {
     /* padding: 100px 20px */
+	position: relative;
 }
 
 @media(min-width: 768px) {
@@ -4150,7 +4151,7 @@ a[data-type=external] {
 }
 
 .article-tease__title {
-    color: #004534;
+    color: #460000;
     font-family: "Jost", sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -5277,7 +5278,7 @@ a[data-type=external] {
 }
 
 .footer__links {
-    color: #460000;
+    color: #004534;
     -moz-column-gap: 10px;
     column-gap: 10px;
     display: grid;
@@ -5290,6 +5291,9 @@ a[data-type=external] {
     padding-bottom: 60px;
     row-gap: 5px;
     width: 100%
+}
+.footer__links a:hover {
+    color: #baedd6;
 }
 
 @media(min-width: 400px)and (max-width:1999px) {
@@ -9910,10 +9914,10 @@ a .lazy-img__placeholder.wide {
 }
 
 .big-intro__text {
-    color: var(--c-text);
-    font-family: "Poppins", sans-serif;
+    color: #004534;
+    font-family: "Outfit", sans-serif;
     font-size: 35px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: -.02em;
     line-height: 1.1;
     position: relative
@@ -10009,10 +10013,10 @@ a .lazy-img__placeholder.wide {
 }
 
 .big-intro__text.st-lab:after {
-    --c-bg-light: #7480e5;
-    --c-bg: #232262;
-    --c-text: #abb4ff;
-    --c-pop: #ea3d3e;
+    --c-bg-light: #baedd6;
+    --c-bg: #cde882;
+    --c-text: #f9bcac;
+    --c-pop: #ffc73a;
     --c-border-dark: #abb4ff;
     --c-border: rgba(116,128,229,.5);
     --c-border-light: rgba(116,128,229,.2);
@@ -20811,7 +20815,7 @@ a .lazy-img__placeholder.wide {
 .form__input, .form__input__btn {
         background-color: #004534;
         color: #fff7ea;
-        border: 2px solid white;
+        border: 2px solid #fff7ea;
 	border-radius: 15px;
         padding: 10px;
         margin: 5px 0; 
@@ -20839,8 +20843,8 @@ a .lazy-img__placeholder.wide {
     justify-content: space-evenly; 
     flex-wrap: wrap;
     margin: 0 auto;
-    padding-top: 190px;
-    padding-bottom: 190px; 
+    padding-top: 240px;
+    padding-bottom: 240px; 
     padding-left: 150px; 
     padding-right: 150px; 
     gap: 50px;
@@ -20858,6 +20862,15 @@ a .lazy-img__placeholder.wide {
     font-size: calc(3.75px + 1.2625vw);
     font-weight: 600;
     min-height: 100px; 
+  }
+  .rq-rectangle:hover { 
+    background-color: #004534;
+    border: 2px solid #004534; 
+    border-radius: 30px;
+    color: #baedd6;
+  }
+.rq-rectangle a:hover { 
+    color: #baedd6;
   }
 @media (max-width: 768px) {
     .rq-rectangle {
@@ -21347,14 +21360,14 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="lazy-img__wrapper ">
 
       
-        <img class="lazy-img block-cta__img lazyautosizes lazyloaded" src="vu_bu.jpg">
+        <img class="lazy-img block-cta__img lazyautosizes lazyloaded" src="vu_building.jpg">
 
         <span class="lazy-img__placeholder" style="padding-top: 100%"></span>
 
           </div>
   				</figure>
 
-									<h1 class="big-intro__caption"><p>Vrije Universiteit Amsterdam<br>De Boelelaan 1105<br>1081 HV Amsterdam</p></h1>
+									<h1 class="big-intro__caption"><p><strong>Vrije Universiteit Amsterdam</strong><br>De Boelelaan 1105<br>1081 HV Amsterdam</p></h1>
 							</div>
 			</div>
 </div>
@@ -21399,7 +21412,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                                                                             <div>
                                             <a class="footer__lab-card st-lab" href="/testtest.com/OurLab" data-loaded-3="">
                                                 <p class="footer__lab-title">Our Lab</p>
-						    <img src="triangles.png" width="80%">
+						    <img src="triangles.png" width="70%">
                                             </a>
                                         </div>
                                                                                                                                                                                                                                                                                     <div>
@@ -21412,7 +21425,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                                                                                                                                                                                                                                                                     <div>
                                             <a class="footer__lab-card ph-lab" href="/testtest.com/People" data-loaded-3="">
                                                 <p class="footer__lab-title">People</p>
-						    <img src="square.png" width="80%">
+						    <img src="square.png" width="90%">
 
                                             </a>
                                         </div>
