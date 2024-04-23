@@ -5655,7 +5655,7 @@ a[data-type=external] {
 .header__inner {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 20px
+    padding-top: 30px
 }
 
 @media(min-width: 768px) {
@@ -5667,7 +5667,7 @@ a[data-type=external] {
 
 @media(min-width: 600px) {
     .header__inner {
-        padding-top:30px
+        padding-top:40px
     }
 }
 
@@ -17253,8 +17253,14 @@ a .laz-img__placeholder.wide {
 	aspect-ratio: 22 / 1 ;
 	overflow: hidden; 
 		display: flex;
-}
+	    flex-wrap: nowrap; /* Prevents the flex items from wrapping */
 
+}
+.block-statistics__list > * { /* Targeting direct children of the container */
+    flex-grow: 1; /* Allows flex items to grow and occupy the available space */
+    flex-basis: 0; /* Sets the initial size of the flex item to 0 */
+    margin: 0; /* Removes margins between the rectangles */
+}
 @media(max-width: 768px) {
     .block-statistics__list {
         display:-ms-flexbox;
