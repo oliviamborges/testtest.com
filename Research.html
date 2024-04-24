@@ -8142,9 +8142,10 @@ a .laz-img__placeholder.wide {
 
 .ve-story-tease__content {
     -ms-flex-pack: justify;
-    background-color: var(--c-bg);
-    border: 1px solid var(--c-border);
-    color: var(--c-text);
+    background-color: #fff7ea;
+    border: 2px solid #004534;
+	border-radius: 20px;
+    color: #004534;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -8176,7 +8177,7 @@ a .laz-img__placeholder.wide {
 }
 
 .ve-story-tease__link.st-lab:focus .ve-story-tease__content,.ve-story-tease__link.st-lab:hover .ve-story-tease__content {
-    --c-bg-light: #7480e5;
+    --c-bg-light: #ffc73a;
     --c-bg: #232262;
     --c-text: #abb4ff;
     --c-pop: #ea3d3e;
@@ -8191,8 +8192,8 @@ a .laz-img__placeholder.wide {
 
 .ve-story-tease__link.lc-lab:focus .ve-story-tease__content,.ve-story-tease__link.lc-lab:hover .ve-story-tease__content {
     --c-bg-light: #fab066;
-    --c-bg: #834a20;
-    --c-text: #ffd6ad;
+    --c-bg: #fab066;
+    --c-text: #450000;
     --c-pop: #7480e5;
     --c-border-dark: #ffd6ad;
     --c-border: hsla(30,94%,69%,.5);
@@ -8336,18 +8337,13 @@ a .laz-img__placeholder.wide {
     }
 }
 
-@media(min-width: 0)and (max-width:1069px)and (prefers-reduced-motion:reduce) {
-    .ve-story-tease__name:after {
-        transition:none
-    }
-}
 
 .ve-story-tease.small .ve-story-tease__name {
     padding-right: 20px;
     width: 100%
 }
 
-.ve-story-tease.small .ve-story-tease__name:after {
+.ve-story-tease.small {
     background-color: var(--c-text);
     border-radius: 50%;
     content: "";
@@ -8361,11 +8357,7 @@ a .laz-img__placeholder.wide {
     width: 14px
 }
 
-@media(prefers-reduced-motion:reduce) {
-    .ve-story-tease.small .ve-story-tease__name:after {
-        transition: none
-    }
-}
+
 
 .ve-story-tease__link:focus .ve-story-tease__name:after,.ve-story-tease__link:hover .ve-story-tease__name:after {
     background-color: var(--c-bg-light)
@@ -8373,7 +8365,7 @@ a .laz-img__placeholder.wide {
 
 .ve-story-tease__title {
     color: var(--c-text);
-    font-family: "Poppins", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: -.02em;
@@ -8384,13 +8376,13 @@ a .laz-img__placeholder.wide {
 
 @media(min-width: 400px)and (max-width:1999px) {
     .ve-story-tease__title {
-        font-size:calc(17.5px + .625vw)
+        font-size:calc(15.5px + .625vw)
     }
 }
 
 @media(min-width: 2000px) {
     .ve-story-tease__title {
-        font-size:30px
+        font-size:25px
     }
 }
 
@@ -18036,25 +18028,27 @@ a .laz-img__placeholder.wide {
 }
 
 .block-ve-story-teases__title {
-    border-top: 1px solid var(--c-text);
+    border-bottom: 2px solid #004534;
     color: var(--c-text);
-    font-family: "Poppins", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
+    font-family: "Jost", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+	font-style: italic;
     line-height: 1.45;
     margin-bottom: 20px;
-    padding-top: 10px
+    padding-top: 10px;
+	height: 40%;
 }
 
 @media(min-width: 400px)and (max-width:1999px) {
     .block-ve-story-teases__title {
-        font-size:calc(11.5px + .125vw)
+        font-size:calc(15.5px + .125vw)
     }
 }
 
 @media(min-width: 2000px) {
     .block-ve-story-teases__title {
-        font-size:14px
+        font-size:25px
     }
 }
 
