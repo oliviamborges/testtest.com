@@ -14849,15 +14849,27 @@ a .laz-img__placeholder.wide {
         margin-bottom:var(--block-spacing-desktop);
         margin-top: var(--block-spacing-desktop)
     }
+    .content-blockb {
+        margin-bottom:var(--block-spacing-desktop);
+        margin-top: var(--block-spacing-desktop)
+    }
 }
-
 .align-left .content-block>* {
     grid-column-end: 3;
     grid-column-start: 1
 }
+	.align-left .content-blockb>* {
+    grid-column-end: 3;
+    grid-column-start: 1
+}
+	
 
 @media(min-width: 1070px) {
     .align-left .content-block>* {
+        grid-column-end:7;
+        grid-column-start: 1
+    }
+	    .align-left .content-blockb>* {
         grid-column-end:7;
         grid-column-start: 1
     }
@@ -14867,9 +14879,17 @@ a .laz-img__placeholder.wide {
     grid-column-end: 3;
     grid-column-start: 1
 }
+	.align-right .content-blockb>* {
+    grid-column-end: 3;
+    grid-column-start: 1
+}
 
 @media(min-width: 1070px) {
     .align-right .content-block>* {
+        grid-column-end:13;
+        grid-column-start: 7
+    }
+	    .align-right .content-blockb>* {
         grid-column-end:13;
         grid-column-start: 7
     }
@@ -14879,14 +14899,28 @@ a .laz-img__placeholder.wide {
     grid-column-end: 3;
     grid-column-start: 1
 }
+	.align-center .content-blockb>* {
+    grid-column-end: 3;
+    grid-column-start: 1
+}
 
 @media(min-width: 1070px) {
     .align-center .content-block>* {
         grid-column-end:10;
         grid-column-start: 4
     }
-
+    .align-center .content-blockb>* {
+        grid-column-end:10;
+        grid-column-start: 4
+    }
     .content-block {
+        grid-column-gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+	        position: relative;
+
+    }
+	    .content-blockb {
         grid-column-gap: 10px;
         display: grid;
         grid-template-columns: repeat(12,1fr);
@@ -14896,6 +14930,10 @@ a .laz-img__placeholder.wide {
 }
 @media(min-width: 1070px) {
     .align-center .content-block>* {
+        grid-column-end:10;
+        grid-column-start: 4
+    }
+	    .align-center .content-blockb>* {
         grid-column-end:10;
         grid-column-start: 4
     }
@@ -14912,8 +14950,13 @@ a .laz-img__placeholder.wide {
 .content-block:first-child {
     margin-top: 0
 }
-
+.content-blockb:first-child {
+    margin-top: 0
+}
 .content-block:last-child {
+    margin-bottom: 0
+}
+	.content-blockb:last-child {
     margin-bottom: 0
 }
 
