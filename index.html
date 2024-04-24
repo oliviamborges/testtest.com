@@ -14832,6 +14832,17 @@ a .laz-img__placeholder.wide {
     position: relative;
     z-index: 2
 }
+.content-blockb {
+    -ms-flex-align: start;
+    grid-column-gap: 10px;
+    align-items: start;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    margin-bottom: var(--block-spacing-mobile);
+    margin-top: var(--block-spacing-mobile);
+    position: relative;
+    z-index: 2
+}
 
 @media(min-width: 768px) {
     .content-block {
@@ -14940,6 +14951,20 @@ a .laz-img__placeholder.wide {
     margin-bottom:0px;
 }
 
+.content-block.alignfullb {
+    max-width: none;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #fff7ea;
+    margin-bottom:0px;
+}
+.content-block.alignfullb>* {
+    grid-column-end: 3;
+    grid-column-start: 1
+}
 .content-block.alignfull>* {
     grid-column-end: 3;
     grid-column-start: 1
@@ -21589,7 +21614,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			</div>
 </header>
 
-			<section class="content-block block-art-teases alignfulla">
+			<section class="content-blockb block-art-teases alignfullb">
 		<ul class="people-tease-grid">
 							<li class="people-tease-grid__tease">
 <art class="art-tease large">
