@@ -11023,7 +11023,6 @@ a .laz-img__placeholder.wide {
         background: linear-gradient(90deg,#fff7ea,#f9bdac,#ffc73b,#f5e65b,#f9cddc,#cce981,#baedd6,#fff7ea);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  height: 100vh;
     }
 }
 
@@ -11136,10 +11135,11 @@ a .laz-img__placeholder.wide {
     color: #004534;
     font-family: "Nunito Sans", sans-serif;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 800;
     letter-spacing: -.02em;
     line-height: 1;
     padding-bottom: 50px;
+    font-style: italic;
 }
 
 @media(min-width: 400px)and (max-width:1999px) {
@@ -11150,7 +11150,7 @@ a .laz-img__placeholder.wide {
 
 @media(min-width: 2000px) {
     .landing-topper__title {
-        font-size:80px
+        font-size:70px
     }
 }
 
@@ -21260,6 +21260,13 @@ a .laz-img__placeholder.wide {
         font-size:calc(15px + .25vw)
     }
 }
+.container_lotus {
+        position: relative;
+        height: 600px; /* Adjust height to prevent cropping */
+        overflow: visible; /* Prevent the image from being cropped */
+        text-align: center; /* Center content horizontally */
+        padding-bottom: 60px;
+    }
 
 .animation {
     backface-visibility: hidden;
@@ -21331,16 +21338,20 @@ a .laz-img__placeholder.wide {
                 
         <header class="landing-topper no-overline">
                 <div class="landing-topper__grid ">
+
                 <div class="landing-topper__left ">
-                    <h1 class="landing-topper__title">A Global Movement for <a class="block-big-link-text__text-link ph-lab" data-loaded-3="">Mental Health.</a></h1>
+                    <h2 class="landing-topper__subhead">Collaborate with us to investigate the universal and unique aspects of well-being in populations from every corner of the world.</h2>
+
                 </div>
+
                 <div class="landing-topper__right ">
-                                    <h2 class="landing-topper__subhead">Collaborate with us to investigate the universal and unique aspects of well-being in populations from every corner of the world.</h2>
+                    <h1 class="landing-topper__title">A Global Movement for <a class="block-big-link-text__text-link ph-lab" data-loaded-3="">Mental Health.</a></h1>
+
                                                 <span class="landing-topper__cta-link">
                             
                         </span>
                             </div>
-<div>
+                        <div class="container_lotus">
                            <svg 
                            xmlns="http://www.w3.org/2000/svg"
                            xmlns:xlink="http://www.w3.org/1999/xlink"
