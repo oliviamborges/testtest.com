@@ -1126,7 +1126,7 @@ a[data-type="external"] {
     
     .paper_sec{
         padding-top: 56px;
-    
+        padding-bottom: 88px;
     }
     
     .lantop_grid {
@@ -1138,12 +1138,14 @@ a[data-type="external"] {
     }
     .lantop_right {
         width:100%;
-        margin-bottom: 67px;
+        margin-bottom: 80px;
         margin-top: -2px;
     }
     
     .lantop.no-overline {
         background-image: url(./your-image2.svg);
+        background-position: top;
+        background-size: 100vw;
     }
     .journal_n {
         margin-top: 28px;
@@ -1156,7 +1158,9 @@ a[data-type="external"] {
     .higlight_text_bold {
         margin-top: 65px;
     }
-
+    .footer {
+        margin-top: 125px;
+    }
     
     }
 
@@ -1218,7 +1222,7 @@ a[data-type="external"] {
         margin-top: 0px;
     }
     .wellb {
-        margin-top: 35px;
+        margin-top: 25px;
     }
     .rect_content {
         margin-top: 40px;
