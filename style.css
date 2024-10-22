@@ -925,6 +925,18 @@ a[data-type="external"] {
 
 
 @media (max-width: 499px) {
+
+    @keyframes floating {
+        0% {
+            transform: translate(0px, 0px);
+        }
+        50% {
+            transform: translate(0px, -7px); 
+        }
+        100% {
+            transform: translate(0px, 0px); 
+        }
+    }
     
     .element-lotus {
         width: calc(24vw);
@@ -1083,7 +1095,7 @@ a[data-type="external"] {
         margin-top: 0px;
     }
     .lantop_title {
-        padding-left: 0px;
+        padding-left: 5px;
     }
     .container_lotus {
         padding-top: 0px;
@@ -1133,6 +1145,18 @@ a[data-type="external"] {
     .lantop.no-overline {
         background-image: url(./your-image2.svg);
     }
+    .journal_n {
+        margin-top: 28px;
+
+    }
+    .textmore {
+        margin-bottom: 0px;
+
+    }
+    .higlight_text_bold {
+        margin-top: 65px;
+    }
+
     
     }
 
@@ -1702,7 +1726,6 @@ a[data-type="external"] {
 @media(min-width: 500px)and (max-width:1999px) {
     .higlight_text_bold {
         font-size:calc(30px + 2.5vw);
-        margin-top: 120px;
     }
 }
 
