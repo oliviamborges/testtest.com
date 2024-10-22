@@ -80,38 +80,26 @@
                         <div class="lim__wrapper laz-video lim__wrapper--video lantop_img-wrapper">
                             <video id="myVideo" width="100%" height="100%" muted="" playsinline="" loop="" data-poster="video.png" autoplay="" class="laz-video" src="p1.mp4" alt="" type="video/mp4">
                             </video>
+                            <video id="myVideo_small" width="100%" height="100%" muted="" playsinline="" loop="" data-poster="video.png" autoplay="" class="laz-video2" src="psmall.mp4" alt="" type="video/mp4">
+                            </video>
                             <script>
-                                function updateVideoSource() {
-                                  var video = document.getElementById('myVideo');
-                                  var source = video.querySelector('source');
-                                  if (window.innerWidth <= 700) {
-                                    source.src = 'psmall.mp4';
-                                  } else {
-                                    source.src = 'p1.mp4';
-                                  }
-                                  video.load(); 
-                                }
-                              
-                                window.addEventListener('DOMContentLoaded', updateVideoSource);
-                                window.addEventListener('resize', updateVideoSource);
-                              
-                                document.addEventListener('DOMContentLoaded', function() {
-                                  var video = document.getElementById('myVideo');
-                              
-                                  video.addEventListener('click', function() {
+                            document.addEventListener('DOMContentLoaded', function () {
+                                var video = document.getElementById('myVideo');
+                            
+                                video.addEventListener('click', function () {
                                     if (video.paused) {
-                                      video.play();
+                                        video.play();
                                     } else {
-                                      video.pause();
+                                        video.pause();
                                     }
-                                  });
-                              
-                                  var pauseButton = document.querySelector('.video-pause-button');
-                                  if (pauseButton) {
-                                    pauseButton.style.display = 'none';
-                                  }
                                 });
-                              </script>
+                            
+                                var pauseButton = document.querySelector('.video-pause-button');
+                                if (pauseButton) {
+                                    pauseButton.style.display = 'none';
+                                }
+                            });
+                            </script>
                             </div>
                         </figure>
                     </header>
