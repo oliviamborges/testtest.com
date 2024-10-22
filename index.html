@@ -561,6 +561,25 @@ a[data-type="external"] {
     }
 }
 
+
+.paper_link2 {
+    column-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-bottom: 1px solid #004534;
+}
+
+@media (min-width: 768px) {
+    .paper_link2 {
+        align-items: center;
+        grid-template-columns: repeat(9, 1fr);
+        display: grid;
+        row-gap: 80px;
+    }
+}
+
 .journ_img-wrapper {
     grid-row: 1 / span 2;
     grid-column: 6 / span 4;
@@ -579,6 +598,11 @@ a[data-type="external"] {
 
 .paper_link:focus .journ_img,
 .paper_link:hover .journ_img {
+    transform: scale(1.05);
+}
+
+.paper_link2:focus .journ_img,
+.paper_link2:hover .journ_img {
     transform: scale(1.05);
 }
 
@@ -653,7 +677,11 @@ a[data-type="external"] {
     text-decoration-color: currentColor;
 }
 
-/* Eve Tease Info */
+.paper_link2:focus .paper_title,
+.paper_link2:hover .paper_title {
+    text-decoration-color: currentColor;
+}
+
 .journal_n {
     display: flex;
     flex-direction: row;
@@ -1110,7 +1138,7 @@ a[data-type="external"] {
 }
 
 .element-lotus.active {
-    animation-name: floating12;
+    animation-name: floating;
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -1553,6 +1581,43 @@ a[data-type="external"] {
     text-decoration-color: var(--c-bg-light)
 }
 
+
+@keyframes floating {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, -15px); 
+    }
+    100% {
+        transform: translate(0px, 0px); 
+    }
+}
+
+.higlight_text_bold {
+    color: var(--c-text);
+    font-size: 331%;
+    color: #004534;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    letter-spacing: -.02em;
+    line-height: 1;
+    margin-top:120px;
+
+}
+
+@media(min-width: 400px)and (max-width:1999px) {
+    .higlight_text_bold {
+        font-size:calc(30px + 2.5vw)
+    }
+}
+
+@media(min-width: 2000px) {
+    .higlight_text_bold {
+        font-size:80px
+    }
+}
+
 </style>
 </head>
 <body>
@@ -1755,7 +1820,7 @@ a[data-type="external"] {
                                  
 
                       <li class="paper_cont"> 
-                        <a href="https://link.springer.com/article/10.1186/s12955-020-01423-y" class="paper_link" data-loaded-3="" target="_blank">
+                        <a href="https://link.springer.com/article/10.1186/s12955-020-01423-y" class="paper_link" target="_blank">
                                         
                         <div class="lim__wrapper journ_img-wrapper">
                     
@@ -1777,14 +1842,14 @@ a[data-type="external"] {
                         </a>
                     </li>
                     <li class="paper_cont"> 
-                        <a href="https://link.springer.com/article/10.1186/s12955-020-01375-3" class="paper_link2" data-loaded-3="" target="_blank">
+                        <a href="https://link.springer.com/article/10.1186/s12955-020-01375-3" class="paper_link2" target="_blank">
                                         
                         <div class="lim__wrapper journ_img-wrapper">
                     
                           
                             <img class="lim journ_img llod" src="pub2.jpg">
                     
-                            <span class="lim_pcont" style="padding-top: 66.66%"></span>
+                            <span class="lim_pcont" style="padding-top: 66.65%"></span>
                     
                               </div>
                                       <div class="authors_cont highlight">
