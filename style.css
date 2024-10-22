@@ -491,7 +491,7 @@ a[data-type="external"] {
     color: #450000;
 }
 
-@media (min-width: 400px) and (max-width: 1999px) {
+@media (min-width: 500px) and (max-width: 1999px) {
     .lantop_subtitle {
         font-size: calc(15.5px + 0.625vw);
         padding-top: 29px;
@@ -925,8 +925,10 @@ a[data-type="external"] {
 
 
 @media (max-width: 499px) {
+    
     .element-lotus {
         width: calc(24vw);
+        height: 170px;
 
     }  
 
@@ -937,13 +939,25 @@ a[data-type="external"] {
     } 
     .lantop_subtitle {
         font-size: calc(14.5px + 0.625vw);
+        padding-top: 8px;
+
     }
 
     .higlight_text_bold {
-        margin-top:0px;
+        margin-top:20px;
         font-size: calc(20px + 2.5vw);
 
     }
+
+    .rect_content {
+        margin-top: 25px;
+
+    }
+
+    .wellb {
+        padding-top: 0px;
+    }
+
     .wellb_more {
         font-size: calc(20px + 0.75vw);
 
@@ -957,8 +971,7 @@ a[data-type="external"] {
 
     }
     .textmore {
-        margin-bottom: 10px;
-
+        margin-bottom: 2px;
 
     }
     .journal_n {
@@ -973,10 +986,19 @@ a[data-type="external"] {
         font-size: calc(19px + 0.75vw);
 
     }
-    .grid-item {
-        padding-top: 0px;
 
+    .footer_bottom  {
+        
+        display: block;
+        margin-bottom: 30px;
+    
     }
+    .grid-item  {
+            
+        padding-top: 0px;
+        text-align: center;
+            
+        }
 
     .element-lotus2 {
         width: calc(70vw);
@@ -1018,7 +1040,17 @@ a[data-type="external"] {
     
     .paper_sec {
         padding-top: 56px;
-    
+        padding-bottom: 53px;
+
+    }
+
+    .footer {
+        margin-top: 100px;
+
+    }
+    .grid-item {
+        padding-top: 0px;
+
     }
     
     .lantop_grid {
@@ -1028,8 +1060,7 @@ a[data-type="external"] {
 
     .lantop_right {
         width: 100%;
-        margin-bottom: 67px;
-        margin-top: -2px;
+        margin-bottom: 45px;
     }
     
     .lantop.no-overline {
@@ -1204,7 +1235,6 @@ a[data-type="external"] {
 
 .element-lotus {
     z-index: 2;
-    width: calc(18vw);
 }
 
 .element-lotus2 {
@@ -1227,7 +1257,7 @@ a[data-type="external"] {
 }
 }
 
-@media(max-width: 1178px) {
+@media(min-width: 500px) and (max-width: 1178px) {
     .element-lotus2  {
         width: calc(50vw);
         
@@ -1351,10 +1381,10 @@ a[data-type="external"] {
         grid-column-start: 1
     }
 }
-@media(max-width: 755px) {
+@media(min-width: 500px) and (max-width: 755px) {
 .ct-block.alignfull {
 	padding-top: 50px;
-        padding-bottom: 70px;
+    padding-bottom: 70px;
 	padding-left: 21px;
 	padding-right:21px;
 }
