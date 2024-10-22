@@ -568,7 +568,6 @@ a[data-type="external"] {
     flex-direction: column;
     padding-bottom: 40px;
     padding-top: 40px;
-    border-bottom: 1px solid #004534;
 }
 
 @media (min-width: 768px) {
@@ -1341,7 +1340,7 @@ a[data-type="external"] {
     line-height: 1.45;
     padding: 10px;
     position: relative;
-    transition: background-color .4s cubic-bezier(.16,1,.3,1),color .4s cubic-bezier(.16,1,.3,1);
+    transition: background-color .5s cubic-bezier(.18,2,.5,1),color .5s cubic-bezier(.18,2,.5,1);
     background-color: #004534;
 }
 
@@ -1555,33 +1554,6 @@ a[data-type="external"] {
 }
 
 
-.higlight_text_bold-link:focus.default,.higlight_text_bold-link:hover.default {
-    --c-bg-light: #ea3d3e;
-    --c-bg: #baedd6;
-    --c-text: #0045348;
-    --c-pop: #fab066;
-    --c-border-dark: #ffc7c8;
-    --c-border: rgba(234,61,62,.5);
-    --c-border-light: rgba(234,61,62,.2);
-    --c-text-light: rgba(255,199,200,.69);
-    -webkit-text-decoration-color: var(--c-bg-light);
-    text-decoration-color: var(--c-bg-light)
-}
-
-.higlight_text_bold-link:focus.starter,.higlight_text_bold-link:hover.starter {
-    --c-bg-light: #84a873;
-    --c-bg: #cde982;
-    --c-text: #004534;
-    --c-pop: #fab066;
-    --c-border-dark: #c1f4a8;
-    --c-border: rgba(132,168,115,.5);
-    --c-border-light: rgba(132,168,115,.2);
-    --c-text-light: rgba(193,244,168,.66);
-    -webkit-text-decoration-color: var(--c-bg-light);
-    text-decoration-color: var(--c-bg-light)
-}
-
-
 @keyframes floating {
     0% {
         transform: translate(0px, 0px);
@@ -1616,6 +1588,61 @@ a[data-type="external"] {
     .higlight_text_bold {
         font-size:80px
     }
+}
+
+
+.higlight_text_t {
+    box-shadow: inset 0 0 0 var(--c-bg);
+    color: #004534;
+    position: relative;
+    text-decoration: underline;
+    -webkit-text-decoration-color: var(--c-text);
+    text-decoration-color: var(--c-text);
+    text-decoration-thickness: .05em;
+    text-underline-offset: .1em;
+    transition: box-shadow .4s cubic-bezier(.16,1,.3,1),color .4s cubic-bezier(.16,1,.3,1),-webkit-text-decoration-color .4s cubic-bezier(.16,1,.3,1);
+    transition: text-decoration-color .4s cubic-bezier(.16,1,.3,1),box-shadow .4s cubic-bezier(.16,1,.3,1),color .4s cubic-bezier(.16,1,.3,1);
+    transition: text-decoration-color .4s cubic-bezier(.16,1,.3,1),box-shadow .4s cubic-bezier(.16,1,.3,1),color .4s cubic-bezier(.16,1,.3,1),-webkit-text-decoration-color .4s cubic-bezier(.16,1,.3,1);
+}
+
+@media(prefers-reduced-motion:reduce) {
+    .higlight_text_t {
+        transition: none
+    }
+}
+
+.higlight_text_t:focus,.higlight_text_t:hover {
+    box-shadow: inset 0 -1.2em 0 var(--c-bg);
+    color: #004534;
+    -webkit-text-decoration-color: var(--c-text);
+    text-decoration-color: var(--c-text)
+}
+
+.higlight_text_t:focus.default,.higlight_text_t:hover.default {
+    --c-bg-light: #ea3d3e;
+    --c-bg: #baedd6;
+    --c-text: #0045348;
+    --c-pop: #fab066;
+    --c-border-dark: #ffc7c8;
+    --c-border: rgba(234,61,62,.5);
+    --c-border-light: rgba(234,61,62,.2);
+    --c-text-light: rgba(255,199,200,.69);
+    -webkit-text-decoration-color: var(--c-bg-light);
+    text-decoration-color: var(--c-bg-light)
+}
+
+
+.higlight_text_t:focus.starter,.higlight_text_t:hover.starter {
+    --c-bg-light: #84a873;
+    --c-bg: #cde982;
+    --c-text: #004534;
+    --c-pop: #fab066;
+    --c-border-dark: #c1f4a8;
+    --c-border: rgba(132,168,115,.5);
+    --c-border-light: rgba(132,168,115,.2);
+    --c-text-light: rgba(193,244,168,.66);
+    -webkit-text-decoration-color: var(--c-bg-light);
+    text-decoration-color: var(--c-bg-light)
 }
 
 </style>
@@ -1674,7 +1701,7 @@ a[data-type="external"] {
                                  </div>
 
                 <div class="lantop_left ">
-                    <h1 class="lantop_title">EMPOWERING <a class="higlight_text starter" data-loaded-3="">MENTAL HEALTH</a> FOR ALL SOCIETIES.</h1>
+                    <h1 class="lantop_title">EMPOWERING <a class="higlight_text_t starter" data-loaded-3="">MENTAL HEALTH</a> FOR ALL SOCIETIES.</h1>
 
 
                 </div>
@@ -1732,9 +1759,9 @@ a[data-type="external"] {
           
                     <section class="ct-block higlight_text_b alignfull">
                         <h1 class="higlight_text_bold">
-                            By validating a compreensive framework for measuring <a class="higlight_text default">well-being</a>, we aim to aim to tackle the 
-                            <a class="higlight_text default">challenges</a> that prevent organizations and governments from effectively promoting 
-                            <a class="higlight_text default">mental health worldwide.</a>
+                            By validating a compreensive framework for measuring <a class="higlight_text_t default">well-being</a>, we aim to aim to tackle the 
+                            <a class="higlight_text_t default">challenges</a> that prevent organizations and governments from effectively promoting 
+                            <a class="higlight_text_t default">mental health worldwide.</a>
                         </h1>
                     
             </section>       
@@ -1884,7 +1911,7 @@ a[data-type="external"] {
                                 
                                                 <ul class="bconnectlinks">
                                                                 <li>
-                                                <a class="bconnectlink" href="" data-loaded-3="">
+                                                <a class="bconnectlink" href="">
                                                     <span class="bconnet"> Connect</span>
                                                     
                                                 </a>
