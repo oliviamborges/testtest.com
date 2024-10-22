@@ -1079,7 +1079,7 @@ a[data-type="external"] {
 
 }
 
-@media(max-width: 990px) {
+@media (min-width: 500px) and (max-width: 990px) {
 
 .lantop_figure {
     margin-top: 0px;
